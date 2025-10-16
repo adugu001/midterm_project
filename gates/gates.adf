@@ -1,0 +1,81 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=gates
+[Library]
+gates=.\gates\gates.lib
+[$LibMap$]
+gates=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+FLOWTOOLS=NONE
+REFRESH_FLOW=1
+FAMILY=
+[Files]
+/and2.vhd=-1
+/buf1.vhd=-1
+/nand2.vhd=-1
+/nor2.vhd=-1
+/not1.vhd=-1
+/or2.vhd=-1
+/xor2.vhd=-1
+/xnor2.vhd=-1
+/design_compile.do=-1
+/gates_tb.vhd=-1
+/gates.asdb=-1
+/gates.awc=-1
+[Files.Data]
+.\src\and2.vhd=VHDL Source Code
+.\src\buf1.vhd=VHDL Source Code
+.\src\nand2.vhd=VHDL Source Code
+.\src\nor2.vhd=VHDL Source Code
+.\src\not1.vhd=VHDL Source Code
+.\src\or2.vhd=VHDL Source Code
+.\src\xor2.vhd=VHDL Source Code
+.\src\xnor2.vhd=VHDL Source Code
+.\src\design_compile.do=Macro
+.\src\gates_tb.vhd=VHDL Source Code
+.\src\gates.asdb=Accelerated Waveform File
+.\src\gates.awc=Accelerated Waveform Configuration
+[folders]
+name0=ALINT-PRO Workspaces
+directory0=c:\My_Designs\midterm_project\gates\
+extension0=alintws
+name1=Coverage Databases
+directory1=c:\My_Designs\midterm_project\gates\
+extension1=acdb
+name2=Dll Libraries
+directory2=c:\My_Designs\midterm_project\gates\
+extension2=dll
+name3=Event Lists
+directory3=c:\My_Designs\midterm_project\gates\
+extension3=lst
+name4=HTML Files
+directory4=c:\My_Designs\midterm_project\gates\
+extension4=htm;html
+name5=Log Files
+directory5=c:\My_Designs\midterm_project\gates\
+extension5=log;htm;xml;txt
+name6=Matlab/Simulink Files
+directory6=c:\My_Designs\midterm_project\
+extension6=m;mdl;slx
+name7=Memory Files
+directory7=c:\My_Designs\midterm_project\gates\
+extension7=mem;mif;hex
+name8=PDF Files
+directory8=c:\My_Designs\midterm_project\gates\
+extension8=pdf
+name9=Profiler Databases
+directory9=c:\My_Designs\midterm_project\gates\
+extension9=tbp
+name10=Script Files
+directory10=c:\My_Designs\midterm_project\gates\
+extension10=do;tcl;pl
+name11=Waveform Files
+directory11=c:\My_Designs\midterm_project\gates\
+extension11=asdb;awc;asdbc;asdbe

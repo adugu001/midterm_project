@@ -1,0 +1,10 @@
+[General]
+CurrentVersion=103
+[CACHEDOC|Aldec.Project.Generic.7|.\subtractor16\subtractor16.adf|]
+Path=
+[COMPILESTATUS|.\src\subtractor16.vhd]
+FileTimeLow=3896436156
+FileTimeHigh=31211212
+Status=Modified
+[Gui config]
+RunFor=100 ns

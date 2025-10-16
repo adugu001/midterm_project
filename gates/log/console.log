@@ -1,0 +1,799 @@
+# DESIGN: Default Design Language: VHDL
+# DESIGN: Default BDE Language: VHDL
+# DESIGN: Flow Manager: Not Defined
+acom -reorder -O3 -e 100 -work gates -2002  $dsn/src/xnor3.vhd
+# Compile Entity "xnor3"
+# Compile Architecture "rtl" of Entity "xnor3"
+# Top-level unit(s) detected:
+# Entity => xnor3
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -O3 -e 100 -work gates -2002  $dsn/src/and2.vhd $dsn/src/and3.vhd $dsn/src/buffer.vhd $dsn/src/nand2.vhd $dsn/src/nand3.vhd $dsn/src/nor2.vhd $dsn/src/nor3.vhd $dsn/src/not.vhd $dsn/src/or2.vhd $dsn/src/or3.vhd $dsn/src/xor2.vhd $dsn/src/xor3.vhd $dsn/src/xnor2.vhd $dsn/src/xnor3.vhd
+# Compile Entity "and2"
+# Compile Architecture "rtl" of Entity "and2"
+# Compile Entity "and3"
+# Compile Architecture "rtl" of Entity "and3"
+# Compile Entity "buffer1"
+# Compile Architecture "rtl" of Entity "buffer1"
+# Compile Entity "nand2"
+# Compile Architecture "rtl" of Entity "nand2"
+# Compile Entity "nand3"
+# Compile Architecture "rtl" of Entity "nand3"
+# Compile Entity "nor2"
+# Compile Architecture "rtl" of Entity "nor2"
+# Compile Entity "nor3"
+# Compile Architecture "rtl" of Entity "nor3"
+# Compile Entity "not1"
+# Compile Architecture "rtl" of Entity "not1"
+# Compile Entity "or2"
+# Compile Architecture "rtl" of Entity "or2"
+# Compile Entity "or3"
+# Compile Architecture "rtl" of Entity "or3"
+# Compile Entity "xor2"
+# Compile Architecture "rtl" of Entity "xor2"
+# Compile Entity "xor3"
+# Compile Architecture "rtl" of Entity "xor3"
+# Compile Entity "xnor2"
+# Compile Architecture "rtl" of Entity "xnor2"
+# Compile Entity "xnor3"
+# Compile Architecture "rtl" of Entity "xnor3"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+addfile -do {c:\My_Designs\midterm_project\gates\src\design_compile.do}
+# Adding file c:\My_Designs\midterm_project\gates\src\design_compile.do ... Done
+acom -O3 -e 100 -work gates -2002  $dsn/src/gates_tb.vhd
+# Compile Entity "gates_tb"
+# Compile Architecture "behavioral" of Entity "gates_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+gates_tb gates_tb behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5440 kB (elbread=427 elab2=4874 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\midterm_project\gates\src\wave.asdb
+#  3:19 PM, Thursday, October 16, 2025
+#  Simulation has been initialized
+run
+# EXECUTION:: ERROR  : Failure: input == 00,  Output == 'U'
+# EXECUTION:: Time: 1 ns,  Iteration: 0,  Instance: /gates_tb,  Process: test.
+# EXECUTION:: ERROR  : Failure: input == 01,  Output == 'U'
+# EXECUTION:: Time: 2 ns,  Iteration: 0,  Instance: /gates_tb,  Process: test.
+# EXECUTION:: ERROR  : Failure: input == 10,  Output == 'U'
+# EXECUTION:: Time: 3 ns,  Iteration: 0,  Instance: /gates_tb,  Process: test.
+# EXECUTION:: ERROR  : Failure: input == 11,  Output == 'U'
+# EXECUTION:: Time: 4 ns,  Iteration: 0,  Instance: /gates_tb,  Process: test.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work gates -2002  $dsn/src/and2.vhd $dsn/src/and3.vhd $dsn/src/buffer.vhd $dsn/src/nand2.vhd $dsn/src/nand3.vhd $dsn/src/nor2.vhd $dsn/src/nor3.vhd $dsn/src/not.vhd $dsn/src/or2.vhd $dsn/src/or3.vhd $dsn/src/xor2.vhd $dsn/src/xor3.vhd $dsn/src/xnor2.vhd $dsn/src/xnor3.vhd $dsn/src/gates_tb.vhd
+# Compile Entity "and2"
+# Compile Architecture "rtl" of Entity "and2"
+# Compile Entity "and3"
+# Compile Architecture "rtl" of Entity "and3"
+# Compile Entity "buffer1"
+# Compile Architecture "rtl" of Entity "buffer1"
+# Compile Entity "nand2"
+# Compile Architecture "rtl" of Entity "nand2"
+# Compile Entity "nand3"
+# Compile Architecture "rtl" of Entity "nand3"
+# Compile Entity "nor2"
+# Compile Architecture "rtl" of Entity "nor2"
+# Compile Entity "nor3"
+# Compile Architecture "rtl" of Entity "nor3"
+# Compile Entity "not1"
+# Compile Architecture "rtl" of Entity "not1"
+# Compile Entity "or2"
+# Compile Architecture "rtl" of Entity "or2"
+# Compile Entity "or3"
+# Compile Architecture "rtl" of Entity "or3"
+# Compile Entity "xor2"
+# Compile Architecture "rtl" of Entity "xor2"
+# Compile Entity "xor3"
+# Compile Architecture "rtl" of Entity "xor3"
+# Compile Entity "xnor2"
+# Compile Architecture "rtl" of Entity "xnor2"
+# Compile Entity "xnor3"
+# Compile Architecture "rtl" of Entity "xnor3"
+# Compile Entity "gates_tb"
+# Compile Architecture "behavioral" of Entity "gates_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work gates -2002  $dsn/src/gates_tb.vhd
+# Compile Entity "gates_tb"
+# Compile Architecture "behavioral" of Entity "gates_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+gates_tb gates_tb behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5440 kB (elbread=427 elab2=4874 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\midterm_project\gates\src\wave.asdb
+#  3:22 PM, Thursday, October 16, 2025
+#  Simulation has been initialized
+run
+# EXECUTION:: ERROR  : Failure: input == 00,  Output == 'U'
+# EXECUTION:: Time: 1 ns,  Iteration: 0,  Instance: /gates_tb,  Process: test.
+# EXECUTION:: ERROR  : Failure: input == 01,  Output == 'U'
+# EXECUTION:: Time: 2 ns,  Iteration: 0,  Instance: /gates_tb,  Process: test.
+# EXECUTION:: ERROR  : Failure: input == 10,  Output == 'U'
+# EXECUTION:: Time: 3 ns,  Iteration: 0,  Instance: /gates_tb,  Process: test.
+# EXECUTION:: ERROR  : Failure: input == 11,  Output == 'U'
+# EXECUTION:: Time: 4 ns,  Iteration: 0,  Instance: /gates_tb,  Process: test.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+gates_tb gates_tb behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5440 kB (elbread=427 elab2=4874 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\midterm_project\gates\src\wave.asdb
+#  3:22 PM, Thursday, October 16, 2025
+#  Simulation has been initialized
+run
+# EXECUTION:: ERROR  : Failure: input == 00,  Output == 'U'
+# EXECUTION:: Time: 1 ns,  Iteration: 0,  Instance: /gates_tb,  Process: test.
+# EXECUTION:: ERROR  : Failure: input == 01,  Output == 'U'
+# EXECUTION:: Time: 2 ns,  Iteration: 0,  Instance: /gates_tb,  Process: test.
+# EXECUTION:: ERROR  : Failure: input == 10,  Output == 'U'
+# EXECUTION:: Time: 3 ns,  Iteration: 0,  Instance: /gates_tb,  Process: test.
+# EXECUTION:: ERROR  : Failure: input == 11,  Output == 'U'
+# EXECUTION:: Time: 4 ns,  Iteration: 0,  Instance: /gates_tb,  Process: test.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# VSIM: 3 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/midterm_project/gates/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5440 kB (elbread=427 elab2=4874 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\midterm_project\gates\src\wave.asdb
+#  3:23 PM, Thursday, October 16, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/midterm_project/gates/src/wave.asdb'.
+run
+# EXECUTION:: ERROR  : Failure: input == 00,  Output == 'U'
+# EXECUTION:: Time: 1 ns,  Iteration: 0,  Instance: /gates_tb,  Process: test.
+# EXECUTION:: ERROR  : Failure: input == 01,  Output == 'U'
+# EXECUTION:: Time: 2 ns,  Iteration: 0,  Instance: /gates_tb,  Process: test.
+# EXECUTION:: ERROR  : Failure: input == 10,  Output == 'U'
+# EXECUTION:: Time: 3 ns,  Iteration: 0,  Instance: /gates_tb,  Process: test.
+# EXECUTION:: ERROR  : Failure: input == 11,  Output == 'U'
+# EXECUTION:: Time: 4 ns,  Iteration: 0,  Instance: /gates_tb,  Process: test.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work gates -2002  $dsn/src/and2.vhd $dsn/src/and3.vhd $dsn/src/buffer.vhd $dsn/src/nand2.vhd $dsn/src/nand3.vhd $dsn/src/nor2.vhd $dsn/src/nor3.vhd $dsn/src/not.vhd $dsn/src/or2.vhd $dsn/src/or3.vhd $dsn/src/xor2.vhd $dsn/src/xor3.vhd $dsn/src/xnor2.vhd $dsn/src/xnor3.vhd $dsn/src/gates_tb.vhd
+# Compile Entity "and2"
+# Compile Architecture "rtl" of Entity "and2"
+# Compile Entity "and3"
+# Compile Architecture "rtl" of Entity "and3"
+# Compile Entity "buffer1"
+# Compile Architecture "rtl" of Entity "buffer1"
+# Compile Entity "nand2"
+# Compile Architecture "rtl" of Entity "nand2"
+# Compile Entity "nand3"
+# Compile Architecture "rtl" of Entity "nand3"
+# Compile Entity "nor2"
+# Compile Architecture "rtl" of Entity "nor2"
+# Compile Entity "nor3"
+# Compile Architecture "rtl" of Entity "nor3"
+# Compile Entity "not1"
+# Compile Architecture "rtl" of Entity "not1"
+# Compile Entity "or2"
+# Compile Architecture "rtl" of Entity "or2"
+# Compile Entity "or3"
+# Compile Architecture "rtl" of Entity "or3"
+# Compile Entity "xor2"
+# Compile Architecture "rtl" of Entity "xor2"
+# Compile Entity "xor3"
+# Compile Architecture "rtl" of Entity "xor3"
+# Compile Entity "xnor2"
+# Compile Architecture "rtl" of Entity "xnor2"
+# Compile Entity "xnor3"
+# Compile Architecture "rtl" of Entity "xnor3"
+# Compile Entity "gates_tb"
+# Compile Architecture "behavioral" of Entity "gates_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5440 kB (elbread=427 elab2=4874 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\midterm_project\gates\src\wave.asdb
+#  3:24 PM, Thursday, October 16, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/midterm_project/gates/src/wave.asdb'.
+run
+# EXECUTION:: ERROR  : Failure: input == 11,  Output == '1'
+# EXECUTION:: Time: 44 ns,  Iteration: 0,  Instance: /gates_tb,  Process: test.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work gates -2002  $dsn/src/gates_tb.vhd
+# Compile Entity "gates_tb"
+# Compile Architecture "behavioral" of Entity "gates_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5440 kB (elbread=427 elab2=4874 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\midterm_project\gates\src\wave.asdb
+#  3:24 PM, Thursday, October 16, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/midterm_project/gates/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work gates -2002  $dsn/src/and2.vhd $dsn/src/buffer.vhd $dsn/src/nand2.vhd $dsn/src/nor2.vhd $dsn/src/not.vhd $dsn/src/or2.vhd $dsn/src/xor2.vhd $dsn/src/xnor2.vhd $dsn/src/gates_tb.vhd
+# Compile Entity "and2"
+# Compile Architecture "rtl" of Entity "and2"
+# Compile Entity "buffer1"
+# Compile Architecture "rtl" of Entity "buffer1"
+# Compile Entity "nand2"
+# Compile Architecture "rtl" of Entity "nand2"
+# Compile Entity "nor2"
+# Compile Architecture "rtl" of Entity "nor2"
+# Compile Entity "not1"
+# Compile Architecture "rtl" of Entity "not1"
+# Compile Entity "or2"
+# Compile Architecture "rtl" of Entity "or2"
+# Compile Entity "xor2"
+# Compile Architecture "rtl" of Entity "xor2"
+# Compile Entity "xnor2"
+# Compile Architecture "rtl" of Entity "xnor2"
+# Compile Entity "gates_tb"
+# Compile Architecture "behavioral" of Entity "gates_tb"
+# Error: COMP96_0207: gates_tb.vhd : (36, 2): No actual specified for local port "b_in".
+# Error: COMP96_0207: gates_tb.vhd : (38, 5): No actual specified for local port "b_in".
+# Error: COMP96_0078: gates_tb.vhd : (46, 138): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (46, 138): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (46, 138): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (47, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (47, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (47, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (48, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (48, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (48, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (49, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (49, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (49, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (50, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (50, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (50, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (51, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (51, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (51, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (52, 108): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (52, 108): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (52, 108): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (53, 108): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (53, 108): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (53, 108): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (58, 138): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (58, 138): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (58, 138): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (59, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (59, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (59, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (60, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (60, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (60, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (61, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (61, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (61, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (62, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (62, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (62, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (63, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (63, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (63, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (68, 138): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (68, 138): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (68, 138): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (69, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (69, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (69, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (70, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (70, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (70, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (71, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (71, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (71, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (72, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (72, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (72, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (73, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (73, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (73, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (74, 108): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (74, 108): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (74, 108): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (75, 108): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (75, 108): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (75, 108): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (80, 138): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (80, 138): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (80, 138): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (81, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (81, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (81, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (82, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (82, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (82, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (83, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (83, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (83, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (84, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (84, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (84, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (85, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (85, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (85, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Compile failure 86 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work gates -2002  $dsn/src/and2.vhd $dsn/src/buf1.vhd $dsn/src/nand2.vhd $dsn/src/nor2.vhd $dsn/src/not1.vhd $dsn/src/or2.vhd $dsn/src/xor2.vhd $dsn/src/xnor2.vhd $dsn/src/gates_tb.vhd
+# Compile Entity "and2"
+# Compile Architecture "rtl" of Entity "and2"
+# Compile Entity "buf1"
+# Compile Architecture "rtl" of Entity "buf1"
+# Compile Entity "nand2"
+# Compile Architecture "rtl" of Entity "nand2"
+# Compile Entity "nor2"
+# Compile Architecture "rtl" of Entity "nor2"
+# Compile Entity "not1"
+# Compile Architecture "rtl" of Entity "not1"
+# Compile Entity "or2"
+# Compile Architecture "rtl" of Entity "or2"
+# Compile Entity "xor2"
+# Compile Architecture "rtl" of Entity "xor2"
+# Compile Entity "xnor2"
+# Compile Architecture "rtl" of Entity "xnor2"
+# Compile Entity "gates_tb"
+# Compile Architecture "behavioral" of Entity "gates_tb"
+# Error: COMP96_0078: gates_tb.vhd : (38, 28): Unknown identifier "buf".
+# Error: COMP96_0055: gates_tb.vhd : (38, 23): Cannot find context item "work.buf".
+# Error: COMP96_0078: gates_tb.vhd : (46, 138): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (46, 138): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (46, 138): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (47, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (47, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (47, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (48, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (48, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (48, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (49, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (49, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (49, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (50, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (50, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (50, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (51, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (51, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (51, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (52, 108): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (52, 108): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (52, 108): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (53, 108): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (53, 108): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (53, 108): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (58, 138): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (58, 138): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (58, 138): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (59, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (59, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (59, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (60, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (60, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (60, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (61, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (61, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (61, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (62, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (62, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (62, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (63, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (63, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (63, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (68, 138): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (68, 138): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (68, 138): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (69, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (69, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (69, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (70, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (70, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (70, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (71, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (71, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (71, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (72, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (72, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (72, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (73, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (73, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (73, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (74, 108): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (74, 108): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (74, 108): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (75, 108): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (75, 108): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (75, 108): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (80, 138): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (80, 138): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (80, 138): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (81, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (81, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (81, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (82, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (82, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (82, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (83, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (83, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (83, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (84, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (84, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (84, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (85, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (85, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (85, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Compile failure 86 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work gates -2002  $dsn/src/and2.vhd $dsn/src/buf1.vhd $dsn/src/nand2.vhd $dsn/src/nor2.vhd $dsn/src/not1.vhd $dsn/src/or2.vhd $dsn/src/xor2.vhd $dsn/src/xnor2.vhd $dsn/src/gates_tb.vhd
+# Compile Entity "and2"
+# Compile Architecture "rtl" of Entity "and2"
+# Compile Entity "buf1"
+# Compile Architecture "rtl" of Entity "buf1"
+# Compile Entity "nand2"
+# Compile Architecture "rtl" of Entity "nand2"
+# Compile Entity "nor2"
+# Compile Architecture "rtl" of Entity "nor2"
+# Compile Entity "not1"
+# Compile Architecture "rtl" of Entity "not1"
+# Compile Entity "or2"
+# Compile Architecture "rtl" of Entity "or2"
+# Compile Entity "xor2"
+# Compile Architecture "rtl" of Entity "xor2"
+# Compile Entity "xnor2"
+# Compile Architecture "rtl" of Entity "xnor2"
+# Compile Entity "gates_tb"
+# Compile Architecture "behavioral" of Entity "gates_tb"
+# Error: COMP96_0078: gates_tb.vhd : (46, 138): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (46, 138): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (46, 138): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (47, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (47, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (47, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (48, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (48, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (48, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (49, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (49, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (49, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (50, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (50, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (50, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (51, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (51, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (51, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (52, 108): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (52, 108): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (52, 108): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (53, 108): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (53, 108): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (53, 108): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (58, 138): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (58, 138): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (58, 138): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (59, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (59, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (59, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (60, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (60, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (60, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (61, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (61, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (61, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (62, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (62, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (62, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (63, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (63, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (63, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (68, 138): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (68, 138): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (68, 138): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (69, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (69, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (69, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (70, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (70, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (70, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (71, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (71, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (71, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (72, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (72, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (72, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (73, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (73, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (73, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (74, 108): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (74, 108): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (74, 108): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (75, 108): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (75, 108): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (75, 108): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (80, 138): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (80, 138): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (80, 138): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (81, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (81, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (81, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (82, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (82, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (82, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (83, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (83, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (83, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (84, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (84, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (84, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (85, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (85, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (85, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Compile failure 84 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work gates -2002  $dsn/src/and2.vhd $dsn/src/buf1.vhd $dsn/src/nand2.vhd $dsn/src/nor2.vhd $dsn/src/not1.vhd $dsn/src/or2.vhd $dsn/src/xor2.vhd $dsn/src/xnor2.vhd $dsn/src/gates_tb.vhd
+# Compile Entity "and2"
+# Compile Architecture "rtl" of Entity "and2"
+# Compile Entity "buf1"
+# Compile Architecture "rtl" of Entity "buf1"
+# Compile Entity "nand2"
+# Compile Architecture "rtl" of Entity "nand2"
+# Compile Entity "nor2"
+# Compile Architecture "rtl" of Entity "nor2"
+# Compile Entity "not1"
+# Compile Architecture "rtl" of Entity "not1"
+# Compile Entity "or2"
+# Compile Architecture "rtl" of Entity "or2"
+# Compile Entity "xor2"
+# Compile Architecture "rtl" of Entity "xor2"
+# Compile Entity "xnor2"
+# Compile Architecture "rtl" of Entity "xnor2"
+# Compile Entity "gates_tb"
+# Compile Architecture "behavioral" of Entity "gates_tb"
+# Error: COMP96_0078: gates_tb.vhd : (58, 138): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (58, 138): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (58, 138): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (59, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (59, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (59, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (60, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (60, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (60, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (61, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (61, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (61, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (62, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (62, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (62, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (63, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (63, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (63, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (68, 138): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (68, 138): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (68, 138): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (69, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (69, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (69, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (70, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (70, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (70, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (71, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (71, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (71, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (72, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (72, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (72, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (73, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (73, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (73, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (74, 108): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (74, 108): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (74, 108): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (75, 108): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (75, 108): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (75, 108): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (80, 138): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (80, 138): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (80, 138): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (81, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (81, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (81, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (82, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (82, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (82, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (83, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (83, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (83, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (84, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (84, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (84, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Error: COMP96_0078: gates_tb.vhd : (85, 132): Unknown identifier "z_sig".
+# Error: COMP96_0133: gates_tb.vhd : (85, 132): Cannot find object declaration.
+# Error: COMP96_0137: gates_tb.vhd : (85, 132): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Compile failure 60 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work gates -2002  $dsn/src/and2.vhd $dsn/src/buf1.vhd $dsn/src/nand2.vhd $dsn/src/nor2.vhd $dsn/src/not1.vhd $dsn/src/or2.vhd $dsn/src/xor2.vhd $dsn/src/xnor2.vhd $dsn/src/gates_tb.vhd
+# Compile Entity "and2"
+# Compile Architecture "rtl" of Entity "and2"
+# Compile Entity "buf1"
+# Compile Architecture "rtl" of Entity "buf1"
+# Compile Entity "nand2"
+# Compile Architecture "rtl" of Entity "nand2"
+# Compile Entity "nor2"
+# Compile Architecture "rtl" of Entity "nor2"
+# Compile Entity "not1"
+# Compile Architecture "rtl" of Entity "not1"
+# Compile Entity "or2"
+# Compile Architecture "rtl" of Entity "or2"
+# Compile Entity "xor2"
+# Compile Architecture "rtl" of Entity "xor2"
+# Compile Entity "xnor2"
+# Compile Architecture "rtl" of Entity "xnor2"
+# Compile Entity "gates_tb"
+# Compile Architecture "behavioral" of Entity "gates_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work gates -2002  $dsn/src/and2.vhd $dsn/src/buf1.vhd $dsn/src/nand2.vhd $dsn/src/nor2.vhd $dsn/src/not1.vhd $dsn/src/or2.vhd $dsn/src/xor2.vhd $dsn/src/xnor2.vhd $dsn/src/gates_tb.vhd
+# Compile Entity "and2"
+# Compile Architecture "rtl" of Entity "and2"
+# Compile Entity "buf1"
+# Compile Architecture "rtl" of Entity "buf1"
+# Compile Entity "nand2"
+# Compile Architecture "rtl" of Entity "nand2"
+# Compile Entity "nor2"
+# Compile Architecture "rtl" of Entity "nor2"
+# Compile Entity "not1"
+# Compile Architecture "rtl" of Entity "not1"
+# Compile Entity "or2"
+# Compile Architecture "rtl" of Entity "or2"
+# Compile Entity "xor2"
+# Compile Architecture "rtl" of Entity "xor2"
+# Compile Entity "xnor2"
+# Compile Architecture "rtl" of Entity "xnor2"
+# Compile Entity "gates_tb"
+# Compile Architecture "behavioral" of Entity "gates_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# KERNEL: Warning: KERNEL_0291 Object "/gates_tb/a_sig" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/gates_tb/b_sig" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/gates_tb/z_sig" has already been traced.
+# VSIM: 0 object(s) traced.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+gates_tb gates_tb behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6507 kB (elbread=427 elab2=5940 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\midterm_project\gates\src\wave.asdb
+#  3:48 PM, Thursday, October 16, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/midterm_project/gates/src/wave.asdb'.
+# VSIM: 10 object(s) traced.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# Waveform file 'c:/My_Designs/midterm_project/gates/src/gates.awc' connected to 'c:/My_Designs/midterm_project/gates/src/gates.asdb'.
+# Adding file c:\My_Designs\midterm_project\gates\src\gates.asdb ... Done
+# Adding file c:\My_Designs\midterm_project\gates\src\gates.awc ... Done
+# Waveform file 'C:/My_Designs/midterm_project/gates/src/gates.awc' connected to 'C:/My_Designs/midterm_project/gates/src/gates.asdb'.
+endsim
+# VSIM: Simulation has finished.
+# Design: Design "full_adder" has been set as active.

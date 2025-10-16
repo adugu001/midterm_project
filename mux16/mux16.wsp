@@ -1,0 +1,19 @@
+[CACHESIMPLE|Aldec.SymbolsCommands.7]
+Built-in symbols=0
+half_adder=0
+full_adder=0
+adder16=0
+subtractor16=0
+mult16=0
+mux16=0
+alu16=0
+[General]
+CurrentVersion=103
+[CACHEDOC|Aldec.Project.Generic.7|.\mux16\mux16.adf|]
+Path=
+[COMPILESTATUS|.\src\mux16.vhd]
+FileTimeLow=4076764933
+FileTimeHigh=31211212
+Status=Modified
+[Gui config]
+RunFor=100 ns

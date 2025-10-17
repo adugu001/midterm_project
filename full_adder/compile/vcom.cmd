@@ -1,0 +1,1 @@
+-w -d C:/My_Designs/midterm_project/full_adder/compile -s C:/My_Designs/midterm_project/library.cfg -j C:/My_Designs/midterm_project/full_adder/projlib.cfg -work full_adder -O3 -e 100 -work full_adder -2002 C:/My_Designs/midterm_project/full_adder/src/full_adder_tb.vhd 

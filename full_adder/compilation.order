@@ -1,1 +1,2 @@
 .\src\full_adder.vhd
+.\src\full_adder_tb.vhd

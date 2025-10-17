@@ -7,8 +7,12 @@ CurrentVersion=103
 [CACHEDOC|Aldec.Project.Generic.7|.\half_adder\half_adder.adf|]
 Path=
 [COMPILESTATUS|.\src\half_adder.vhd]
-FileTimeLow=3475954088
-FileTimeHigh=31211212
-Status=Modified
+FileTimeLow=3294122824
+FileTimeHigh=31211401
+Status=Error
+[COMPILESTATUS|.\src\half_adder.vhd]
+FileTimeLow=2992798163
+FileTimeHigh=31211407
+Status=Compiled
 [Gui config]
 RunFor=100 ns

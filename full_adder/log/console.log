@@ -1,0 +1,33 @@
+# Library Manager: Library "gates" attached.
+# Library Manager: Remove mapping "half_adder1" of library file "C:/My_Designs/midterm_project/half_adder/half_adder/half_adder.lib".
+# Library Manager: Local library "half_adder1" detached.
+acom -O3 -e 100 -work full_adder -2002  $dsn/src/full_adder.vhd
+# Compile Entity "fullAdder"
+# Compile Architecture "behavioral" of Entity "fullAdder"
+# Compile Architecture "structural" of Entity "fullAdder"
+# Error: COMP96_0078: full_adder.vhd : (39, 32): Unknown identifier "xor2".
+# Error: COMP96_0055: full_adder.vhd : (39, 21): Cannot find context item "half_adder.xor2".
+# Error: COMP96_0078: full_adder.vhd : (43, 32): Unknown identifier "and2".
+# Error: COMP96_0055: full_adder.vhd : (43, 21): Cannot find context item "half_adder.and2".
+# Error: COMP96_0078: full_adder.vhd : (47, 32): Unknown identifier "or2".
+# Error: COMP96_0055: full_adder.vhd : (47, 21): Cannot find context item "half_adder.or2".
+# Compile failure 6 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work full_adder -2002  $dsn/src/full_adder.vhd
+# Compile Entity "fullAdder"
+# Compile Architecture "behavioral" of Entity "fullAdder"
+# Compile Architecture "structural" of Entity "fullAdder"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work full_adder -2002  $dsn/src/full_adder_tb.vhd
+# Compile Entity "full_adder_tb"
+# Compile Architecture "behavioral" of Entity "full_adder_tb"
+# Error: COMP96_0078: full_adder_tb.vhd : (18, 27): Unknown identifier "full_adder".
+# Error: COMP96_0055: full_adder_tb.vhd : (18, 22): Cannot find context item "work.full_adder".
+# Error: COMP96_0078: full_adder_tb.vhd : (20, 27): Unknown identifier "full_adder".
+# Error: COMP96_0055: full_adder_tb.vhd : (20, 22): Cannot find context item "work.full_adder".
+# Error: COMP96_0124: full_adder_tb.vhd : (37, 40): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (37, 73): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (37, 108): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (39, 40): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (39, 73): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (39, 108): Illegal prefix for attribute 'IMAGE.
+# Compile failure 10 Errors 0 Warnings  Analysis time :  0.0 [ms]

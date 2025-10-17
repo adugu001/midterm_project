@@ -1,0 +1,1 @@
+-w -d C:/My_Designs/midterm_project/half_adder/compile -s C:/My_Designs/midterm_project/library.cfg -j C:/My_Designs/midterm_project/half_adder/projlib.cfg -work half_adder -O3 -e 100 -work half_adder -2002 C:/My_Designs/midterm_project/half_adder/src/half_adder.vhd 

@@ -1,0 +1,10 @@
+ERROR COMP96_0078: "Unknown identifier "full_adder"." "C:/My_Designs/midterm_project/full_adder/src/full_adder_tb.vhd" 18 27
+ERROR COMP96_0055: "Cannot find context item "work.full_adder"." "C:/My_Designs/midterm_project/full_adder/src/full_adder_tb.vhd" 18 22
+ERROR COMP96_0078: "Unknown identifier "full_adder"." "C:/My_Designs/midterm_project/full_adder/src/full_adder_tb.vhd" 20 27
+ERROR COMP96_0055: "Cannot find context item "work.full_adder"." "C:/My_Designs/midterm_project/full_adder/src/full_adder_tb.vhd" 20 22
+ERROR COMP96_0124: "Illegal prefix for attribute 'IMAGE." "C:/My_Designs/midterm_project/full_adder/src/full_adder_tb.vhd" 37 40
+ERROR COMP96_0124: "Illegal prefix for attribute 'IMAGE." "C:/My_Designs/midterm_project/full_adder/src/full_adder_tb.vhd" 37 73
+ERROR COMP96_0124: "Illegal prefix for attribute 'IMAGE." "C:/My_Designs/midterm_project/full_adder/src/full_adder_tb.vhd" 37 108
+ERROR COMP96_0124: "Illegal prefix for attribute 'IMAGE." "C:/My_Designs/midterm_project/full_adder/src/full_adder_tb.vhd" 39 40
+ERROR COMP96_0124: "Illegal prefix for attribute 'IMAGE." "C:/My_Designs/midterm_project/full_adder/src/full_adder_tb.vhd" 39 73
+ERROR COMP96_0124: "Illegal prefix for attribute 'IMAGE." "C:/My_Designs/midterm_project/full_adder/src/full_adder_tb.vhd" 39 108

@@ -1,1 +1,2 @@
 .\src\adder16.vhd
+.\src\adder16_tb.vhd

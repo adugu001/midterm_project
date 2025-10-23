@@ -57,7 +57,13 @@ directory11=c:\My_Designs\midterm_project\half_adder\
 extension11=asdb;awc;asdbc;asdbe
 [Files]
 /half_adder.vhd=-1
-/half_adder.vhd=-1
+/half_adder_tb.vhd=-1
+/half_adder_tb.vhd=-1
+/half_adder_tb_wf.asdb=-1
+/half_adder_tb_wf.awc=-1
 [Files.Data]
 .\src\half_adder.vhd=VHDL Source Code
-.\src\half_adder.vhd=VHDL Source Code
+.\src\half_adder_tb.vhd=VHDL Source Code
+.\src\half_adder_tb.vhd=VHDL Source Code
+.\src\half_adder_tb_wf.asdb=Accelerated Waveform File
+.\src\half_adder_tb_wf.awc=Accelerated Waveform Configuration

@@ -1,13 +1,24 @@
-timestamp=1760723932076
+timestamp=1761162814491
 
 [~A]
-ModifyID=7
+ModifyID=9
 Version=74
 
 [~MFT]
-0=10|0half_adder.mgf|5632|1681
-1=2|1half_adder.mgf|7204|4778
-3=1|3half_adder.mgf|278|0
+0=3|0half_adder.mgf|8228|1681
+1=1|1half_adder.mgf|8058|4778
+3=1|3half_adder.mgf|556|0
+
+[full_adder_tb]
+A/behavioral=21|../src/half_adder_tb.vhd|8|1*8058
+BinW64/behavioral=3*556
+I=0*6384
+I/behavioral=0*8228
+M=11|2|vf5|1761162773898|../src/half_adder_tb.vhd|0*6081*0xcf16be5a174093636dd482406a55ee7494906b57|0*6293*0x23b75c12e3e89f2ef000564498faa8c2
+M/behavioral=21|2|vf5|1761162814450|../src/half_adder_tb.vhd|0*6629*0x3203409317aaf6cf14c2a0c378f4eb993732cbc1|0*8123*0x20116f55b147878295aeff36dce7fc50
+R=../src/half_adder_tb.vhd|5
+Version=15.0.260.9131 (Windows64)|00000003789cd3f5370600015b00b0|a6d9544d463e51205ff7fdbcf61f84f4cb32de88913de833873bfe5b99a36b0b8e6e9d9dbdcc9b048baa086a5adcecea
+Version/behavioral=15.0.260.9131 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff471d2c0b52ebf864f5e882e8aaffc25c8
 
 [fulladder]
 A/behavioral=21|../src/half_adder.vhd|16|1*4778
@@ -40,5 +51,6 @@ Version/behavioral=15.0.260.9131 (Windows64)|00000003789cd3f5370600015b00b0|35f8
 Version/structural=15.0.260.9131 (Windows64)|00000003789cd3f5370600015b00b0|763af2576fce11abd6060bb6269849fa7b35399d4d6b9112dfc7987dc24af3eb1986b84c3e7460c1a2b2eef31a3fa98a
 
 [~U]
+full_adder_tb=11|0*5949|
 fulladder=fullAdder 11|0*1112|
 halfadder=halfAdder 11|0*3815|

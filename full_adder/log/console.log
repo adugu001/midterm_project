@@ -1,23 +1,7 @@
-# Library Manager: Library "gates" attached.
-# Library Manager: Remove mapping "half_adder1" of library file "C:/My_Designs/midterm_project/half_adder/half_adder/half_adder.lib".
-# Library Manager: Local library "half_adder1" detached.
-acom -O3 -e 100 -work full_adder -2002  $dsn/src/full_adder.vhd
+acom -O3 -e 100 -work full_adder -2002  $dsn/src/full_adder.vhd $dsn/src/full_adder_tb.vhd
 # Compile Entity "fullAdder"
 # Compile Architecture "behavioral" of Entity "fullAdder"
 # Compile Architecture "structural" of Entity "fullAdder"
-# Error: COMP96_0078: full_adder.vhd : (39, 32): Unknown identifier "xor2".
-# Error: COMP96_0055: full_adder.vhd : (39, 21): Cannot find context item "half_adder.xor2".
-# Error: COMP96_0078: full_adder.vhd : (43, 32): Unknown identifier "and2".
-# Error: COMP96_0055: full_adder.vhd : (43, 21): Cannot find context item "half_adder.and2".
-# Error: COMP96_0078: full_adder.vhd : (47, 32): Unknown identifier "or2".
-# Error: COMP96_0055: full_adder.vhd : (47, 21): Cannot find context item "half_adder.or2".
-# Compile failure 6 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work full_adder -2002  $dsn/src/full_adder.vhd
-# Compile Entity "fullAdder"
-# Compile Architecture "behavioral" of Entity "fullAdder"
-# Compile Architecture "structural" of Entity "fullAdder"
-# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work full_adder -2002  $dsn/src/full_adder_tb.vhd
 # Compile Entity "full_adder_tb"
 # Compile Architecture "behavioral" of Entity "full_adder_tb"
 # Error: COMP96_0078: full_adder_tb.vhd : (18, 27): Unknown identifier "full_adder".
@@ -30,4 +14,236 @@ acom -O3 -e 100 -work full_adder -2002  $dsn/src/full_adder_tb.vhd
 # Error: COMP96_0124: full_adder_tb.vhd : (39, 40): Illegal prefix for attribute 'IMAGE.
 # Error: COMP96_0124: full_adder_tb.vhd : (39, 73): Illegal prefix for attribute 'IMAGE.
 # Error: COMP96_0124: full_adder_tb.vhd : (39, 108): Illegal prefix for attribute 'IMAGE.
-# Compile failure 10 Errors 0 Warnings  Analysis time :  0.0 [ms]
+# Compile failure 10 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work full_adder -2002  $dsn/src/full_adder_tb.vhd
+# Compile Entity "full_adder_tb"
+# Compile Architecture "behavioral" of Entity "full_adder_tb"
+# Error: COMP96_0124: full_adder_tb.vhd : (37, 40): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (37, 73): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (37, 108): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (39, 40): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (39, 73): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (39, 108): Illegal prefix for attribute 'IMAGE.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work full_adder -2002  $dsn/src/full_adder_tb.vhd
+# Compile Entity "full_adder_tb"
+# Compile Architecture "behavioral" of Entity "full_adder_tb"
+# Error: COMP96_0124: full_adder_tb.vhd : (37, 67): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (37, 102): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0071: full_adder_tb.vhd : (37, 33): Operator "&" is not defined for such operands.
+# Error: COMP96_0086: full_adder_tb.vhd : (37, 12): String expected.
+# Error: COMP96_0124: full_adder_tb.vhd : (39, 40): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (39, 73): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (39, 108): Illegal prefix for attribute 'IMAGE.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work full_adder -2002  $dsn/src/full_adder_tb.vhd
+# Compile Entity "full_adder_tb"
+# Compile Architecture "behavioral" of Entity "full_adder_tb"
+# Error: COMP96_0078: full_adder_tb.vhd : (37, 33): Unknown identifier "to_string".
+# Error: COMP96_0124: full_adder_tb.vhd : (37, 78): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (37, 113): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0133: full_adder_tb.vhd : (37, 33): Cannot find object declaration.
+# Error: COMP96_0289: full_adder_tb.vhd : (37, 33): Prefix of index must be an array.
+# Error: COMP96_0086: full_adder_tb.vhd : (37, 12): String expected.
+# Error: COMP96_0124: full_adder_tb.vhd : (39, 40): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (39, 73): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (39, 108): Illegal prefix for attribute 'IMAGE.
+# Compile failure 9 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work full_adder -2002  $dsn/src/full_adder_tb.vhd
+# Compile Entity "full_adder_tb"
+# Compile Architecture "behavioral" of Entity "full_adder_tb"
+# Error: COMP96_0078: full_adder_tb.vhd : (37, 33): Unknown identifier "to_string".
+# Error: COMP96_0124: full_adder_tb.vhd : (37, 88): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (37, 123): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0133: full_adder_tb.vhd : (37, 33): Cannot find object declaration.
+# Error: COMP96_0289: full_adder_tb.vhd : (37, 33): Prefix of index must be an array.
+# Error: COMP96_0086: full_adder_tb.vhd : (37, 12): String expected.
+# Error: COMP96_0124: full_adder_tb.vhd : (39, 40): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (39, 73): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (39, 108): Illegal prefix for attribute 'IMAGE.
+# Compile failure 9 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work full_adder -2002  $dsn/src/full_adder_tb.vhd
+# Compile Entity "full_adder_tb"
+# Compile Architecture "behavioral" of Entity "full_adder_tb"
+# Error: COMP96_0124: full_adder_tb.vhd : (37, 77): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (37, 112): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0071: full_adder_tb.vhd : (37, 33): Operator "&" is not defined for such operands.
+# Error: COMP96_0086: full_adder_tb.vhd : (37, 12): String expected.
+# Error: COMP96_0124: full_adder_tb.vhd : (39, 40): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (39, 73): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (39, 108): Illegal prefix for attribute 'IMAGE.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work full_adder -2002  $dsn/src/full_adder_tb.vhd
+# Compile Entity "full_adder_tb"
+# Compile Architecture "behavioral" of Entity "full_adder_tb"
+# Error: COMP96_0071: full_adder_tb.vhd : (37, 33): Operator "&" is not defined for such operands.
+# Error: COMP96_0086: full_adder_tb.vhd : (37, 12): String expected.
+# Error: COMP96_0124: full_adder_tb.vhd : (39, 40): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (39, 73): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (39, 108): Illegal prefix for attribute 'IMAGE.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work full_adder -2002  $dsn/src/full_adder_tb.vhd
+# Compile Entity "full_adder_tb"
+# Compile Architecture "behavioral" of Entity "full_adder_tb"
+# Error: COMP96_0124: full_adder_tb.vhd : (37, 57): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (37, 92): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (39, 40): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (39, 73): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (39, 108): Illegal prefix for attribute 'IMAGE.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work full_adder -2002  $dsn/src/full_adder_tb.vhd
+# Compile Entity "full_adder_tb"
+# Compile Architecture "behavioral" of Entity "full_adder_tb"
+# Error: COMP96_0124: full_adder_tb.vhd : (39, 17): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (39, 44): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (39, 71): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (39, 91): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (39, 120): Illegal prefix for attribute 'IMAGE.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  79.0 [ms]
+acom -O3 -e 100 -work full_adder -2002  $dsn/src/full_adder_tb.vhd
+# Compile Entity "full_adder_tb"
+# Compile Architecture "behavioral" of Entity "full_adder_tb"
+# Error: COMP96_0078: full_adder_tb.vhd : (19, 29): Unknown identifier "a_b_cin".
+# Error: COMP96_0078: full_adder_tb.vhd : (19, 50): Unknown identifier "a_b_cin".
+# Error: COMP96_0078: full_adder_tb.vhd : (19, 70): Unknown identifier "a_b_cin".
+# Error: COMP96_0078: full_adder_tb.vhd : (21, 29): Unknown identifier "a_b_cin".
+# Error: COMP96_0078: full_adder_tb.vhd : (21, 50): Unknown identifier "a_b_cin".
+# Error: COMP96_0078: full_adder_tb.vhd : (21, 70): Unknown identifier "a_b_cin".
+# Error: COMP96_0124: full_adder_tb.vhd : (41, 8): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (41, 26): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (41, 46): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (41, 66): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (41, 95): Illegal prefix for attribute 'IMAGE.
+# Compile failure 11 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work full_adder -2002  $dsn/src/full_adder_tb.vhd
+# Compile Entity "full_adder_tb"
+# Compile Architecture "behavioral" of Entity "full_adder_tb"
+# Error: COMP96_0124: full_adder_tb.vhd : (41, 8): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (41, 26): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (41, 46): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (41, 66): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (41, 95): Illegal prefix for attribute 'IMAGE.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work full_adder -2002  $dsn/src/full_adder_tb.vhd
+# Compile Entity "full_adder_tb"
+# Compile Architecture "behavioral" of Entity "full_adder_tb"
+# Error: COMP96_0124: full_adder_tb.vhd : (41, 17): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (41, 35): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (41, 55): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (41, 75): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (41, 104): Illegal prefix for attribute 'IMAGE.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work full_adder -2002  $dsn/src/full_adder_tb.vhd
+# Compile Entity "full_adder_tb"
+# Compile Architecture "behavioral" of Entity "full_adder_tb"
+# Error: COMP96_0090: full_adder_tb.vhd : (42, 12): Expected array type.
+# Error: COMP96_0124: full_adder_tb.vhd : (42, 15): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (42, 33): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (42, 53): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (42, 73): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (42, 102): Illegal prefix for attribute 'IMAGE.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work full_adder -2002  $dsn/src/full_adder_tb.vhd
+# Compile Entity "full_adder_tb"
+# Compile Architecture "behavioral" of Entity "full_adder_tb"
+# Error: COMP96_0124: full_adder_tb.vhd : (42, 12): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (42, 30): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (42, 50): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (42, 70): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (42, 99): Illegal prefix for attribute 'IMAGE.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work full_adder -2002  $dsn/src/full_adder_tb.vhd
+# Compile Entity "full_adder_tb"
+# Compile Architecture "behavioral" of Entity "full_adder_tb"
+# Error: COMP96_0124: full_adder_tb.vhd : (42, 17): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (42, 37): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (42, 57): Illegal prefix for attribute 'IMAGE.
+# Error: COMP96_0124: full_adder_tb.vhd : (42, 86): Illegal prefix for attribute 'IMAGE.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work full_adder -2002  $dsn/src/full_adder_tb.vhd
+# Compile Entity "full_adder_tb"
+# Compile Architecture "behavioral" of Entity "full_adder_tb"
+# Error: COMP96_0124: full_adder_tb.vhd : (42, 12): Illegal prefix for attribute 'IMAGE.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work full_adder -2002  $dsn/src/full_adder_tb.vhd
+# Compile Entity "full_adder_tb"
+# Compile Architecture "behavioral" of Entity "full_adder_tb"
+# Error: COMP96_0753: full_adder_tb.vhd : (42, 7): Cannot find the "&" operator with operands denoted with the "[STRING, STD_ULOGIC]" signature.
+# Error: COMP96_0086: full_adder_tb.vhd : (40, 13): String expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work full_adder -2002  $dsn/src/full_adder_tb.vhd
+# Compile Entity "full_adder_tb"
+# Compile Architecture "behavioral" of Entity "full_adder_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -O3 -e 100 -work full_adder -2002  $dsn/src/full_adder_tb.vhd
+# Compile Entity "full_adder_tb"
+# Compile Architecture "behavioral" of Entity "full_adder_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: ELBREAD_0058 Library 'gates' containing architecture 'rtl(xor2)' instantiated in the architecture 'structural(halfAdder)' has been remapped.
+# ELBREAD: Warning: ELBREAD_0058 Library 'gates' containing architecture 'rtl(and2)' instantiated in the architecture 'structural(halfAdder)' has been remapped.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+full_adder_tb full_adder_tb behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: ELBREAD_0058 Library 'gates' containing architecture 'rtl(xor2)' instantiated in the architecture 'structural(halfAdder)' has been remapped.
+# ELBREAD: Warning: ELBREAD_0058 Library 'gates' containing architecture 'rtl(and2)' instantiated in the architecture 'structural(halfAdder)' has been remapped.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6470 kB (elbread=427 elab2=5903 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\midterm_project\full_adder\src\wave.asdb
+#  3:47 PM, Wednesday, October 22, 2025
+#  Simulation has been initialized
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+full_adder_tb full_adder_tb behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: ELBREAD_0058 Library 'gates' containing architecture 'rtl(xor2)' instantiated in the architecture 'structural(halfAdder)' has been remapped.
+# ELBREAD: Warning: ELBREAD_0058 Library 'gates' containing architecture 'rtl(and2)' instantiated in the architecture 'structural(halfAdder)' has been remapped.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6470 kB (elbread=427 elab2=5903 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\midterm_project\full_adder\src\wave.asdb
+#  3:48 PM, Wednesday, October 22, 2025
+#  Simulation has been initialized
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/midterm_project/full_adder/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/midterm_project/full_adder/src/full_adder_tb_wf.asdb'.
+# Adding file C:\My_Designs\midterm_project\full_adder\src\full_adder_tb_wf.asdb ... Done
+# Adding file C:\My_Designs\midterm_project\full_adder\src\full_adder_tb_wf.awc ... Done
+# Design: Design "half_adder" has been set as active.

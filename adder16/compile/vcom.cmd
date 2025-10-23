@@ -1,0 +1,1 @@
+-w -d C:/My_Designs/midterm_project/adder16/compile -s C:/My_Designs/midterm_project/library.cfg -j C:/My_Designs/midterm_project/adder16/projlib.cfg -work adder16 -O3 -e 100 -work adder16 -2002 C:/My_Designs/midterm_project/adder16/src/adder16_tb.vhd 

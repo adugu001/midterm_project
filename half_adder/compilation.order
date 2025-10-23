@@ -1,1 +1,2 @@
 .\src\half_adder.vhd
+.\src\half_adder_tb.vhd

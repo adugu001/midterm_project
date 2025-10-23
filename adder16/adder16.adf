@@ -7,9 +7,13 @@ Current Config=compile
 compile=adder16
 [Library]
 adder16=.\adder16\adder16.lib
+full_adder=.\..\full_adder\full_adder\full_adder.lib
+gates=.\..\gates\gates\gates.lib
 [$LibMap$]
 adder16=.
 Active_lib=
+full_adder=.
+gates=.
 [Settings]
 FLOW_TYPE=HDL
 LANGUAGE=VHDL
@@ -55,5 +59,7 @@ directory11=c:\My_Designs\midterm_project\adder16\
 extension11=asdb;awc;asdbc;asdbe
 [Files]
 /adder16.vhd=-1
+/adder16_tb.vhd=-1
 [Files.Data]
 .\src\adder16.vhd=VHDL Source Code
+.\src\adder16_tb.vhd=VHDL Source Code

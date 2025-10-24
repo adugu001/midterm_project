@@ -43,50 +43,56 @@ constant Test_Cases : TestCase_Array := (
 
 --SIGNAL DECLARATIONS
 	--input
-    signal a  : STD_LOGIC_VECTOR(15 downto 0) := (others => '0'); 
-    signal b  : STD_LOGIC_VECTOR(15 downto 0) := (others => '0');
-    signal cin  : std_logic := '0';    
+    signal A_sig  : STD_LOGIC_VECTOR(15 downto 0) := (others => '0'); 
+    signal B_sig  : STD_LOGIC_VECTOR(15 downto 0) := (others => '0');
+    signal c_sig  : STD_LOGIC := '0';    
 	--outputs
-    signal sum_sig_beh  : STD_LOGIC_VECTOR(15 downto 0) := (others => '0');
-    signal cout_sig_beh  : std_logic;  	 
-	signal sum_sig_str  : STD_LOGIC_VECTOR(15 downto 0) := (others => '0');
-    signal cout_sig_str  : std_logic;  
+    signal R_beh    : STD_LOGIC_VECTOR(15 downto 0) := (others => '0');
+    signal cout_beh : STD_LOGIC;  	 
+	signal R_str    : STD_LOGIC_VECTOR(15 downto 0) := (others => '0');
+    signal cout_str : STD_LOGIC;  	   
+	--crit path
     constant DELTA_DELAY : time :=  640 ns;
 
 begin	
 	uut_beh : entity work.adder16(behavioral)
-        port map ( a_in  => a, b_in  => b, c_in => cin, sum => sum_sig_beh, c_out => cout_sig_beh);	 
+        port map ( A  => A_sig, B => B_sig, c_in => c_sig, R => R_beh, c_out => cout_beh);	 
     uut_str : entity work.adder16(structural)
-        port map ( a_in  => a, b_in  => b, c_in => cin, sum => sum_sig_str, c_out => cout_sig_str);
+        port map ( A  => A_sig, B => B_sig, c_in => c_sig, R => R_str, c_out => cout_str);
 
     test : process	
-	variable av, bv, cinv, sumv, coutv : integer;
+	variable A_int, B_int, c_int, R_int, cout_int : INTEGER;
     begin
-        special_case_loop: for i in Test_cases'range loop
-			a   <= Test_cases(i).A_in;
-			b   <= Test_cases(i).B_in;
-			cin <= Test_cases(i).C_in;  
+        SPECIAL_CASES: for i in Test_cases'range loop 
+			--assign
+			A_sig   <= Test_cases(i).A_in;
+			B_sig   <= Test_cases(i).B_in;
+			c_sig   <= Test_cases(i).C_in;  
 			wait for DELTA_DELAY;
-			assert (sum_sig_beh = Test_cases(i).Sum and cout_sig_beh = Test_cases(i).Cout) 
+			--assert
+			assert (R_beh = Test_cases(i).Sum and cout_beh = Test_cases(i).Cout) 
 				report "behavioral special cases test fail"; 
-			assert (sum_sig_str = Test_cases(i).Sum and cout_sig_str = Test_cases(i).Cout) 
+			assert (R_str = Test_cases(i).Sum and cout_str = Test_cases(i).Cout) 
 				report "structural special cases test fail";
 		end loop;
 		
 		sanity_check_loop: for i in 0 to 1000 loop	
-			for j in 0 to 10 loop	 
-				sumv := i + j;
-				a   <= std_logic_vector(to_unsigned(i, 16));
-				b   <= std_logic_vector(to_unsigned(j, 16));
-				cin <= '0';  
+			for j in 0 to 10 loop	
+				--calc actual sum
+				R_int   := i + j;
+				--assign
+				A_sig   <= STD_LOGIC_VECTOR(TO_UNSIGNED(i, 16));
+				B_sig   <= STD_LOGIC_VECTOR(TO_UNSIGNED(j, 16));
+				c_sig   <= '0';  
+				wait for DELTA_DELAY; 
+				-- assert
+				assert (UNSIGNED(R_beh) = R_int) report "behavioral sanity check fail";
+				assert (UNSIGNED(R_str) = R_int) report "structural sanity check fail"; 
+				R_int := R_int + 1;
+				c_sig <= '1';  
 				wait for DELTA_DELAY;
-				assert (unsigned(sum_sig_beh) = sumv) report "behavioral sanity check fail";
-				assert (unsigned(sum_sig_str) = sumv) report "structural sanity check fail"; 
-				sumv := sumv + 1;
-				cin <= '1';  
-				wait for DELTA_DELAY;
-				assert (unsigned(sum_sig_beh) = sumv) report "behavioral sanity check fail";
-				assert (unsigned(sum_sig_str) = sumv) report "structural sanity check fail"; 
+				assert (UNSIGNED(R_beh) = R_int) report "behavioral sanity check fail";
+				assert (UNSIGNED(R_str) = R_int) report "structural sanity check fail"; 
 			end loop;
 		end loop;
         --put test here

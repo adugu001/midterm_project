@@ -1,0 +1,14 @@
+[COMPILESTATUS|.\src\mux2.vhd]
+FileTimeLow=4149132132
+FileTimeHigh=31212825
+Status=Modified
+[General]
+CurrentVersion=103
+[CACHEDOC|Aldec.Project.Generic.7|.\mux\mux.adf|]
+Path=
+[COMPILESTATUS|.\src\mux8.vhd]
+FileTimeLow=3825983550
+FileTimeHigh=31212831
+Status=Modified
+[Gui config]
+RunFor=100 ns

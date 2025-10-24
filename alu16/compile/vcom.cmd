@@ -1,0 +1,1 @@
+-w -d C:/My_Designs/midterm_project/alu16/compile -s C:/My_Designs/midterm_project/library.cfg -j C:/My_Designs/midterm_project/alu16/projlib.cfg -work alu16 -O3 -e 100 -work alu16 -2008 C:/My_Designs/midterm_project/alu16/src/alu16.vhd 

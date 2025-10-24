@@ -7,9 +7,13 @@ Current Config=compile
 compile=alu16
 [Library]
 alu16=.\alu16\alu16.lib
+gates=.\..\gates\gates\gates.lib
+adder16=.\..\adder16\adder16\adder16.lib
 [$LibMap$]
 alu16=.
 Active_lib=
+gates=.
+adder16=.
 [Settings]
 FLOW_TYPE=HDL
 LANGUAGE=VHDL
@@ -57,3 +61,18 @@ extension11=asdb;awc;asdbc;asdbe
 /alu16.vhd=-1
 [Files.Data]
 .\src\alu16.vhd=VHDL Source Code
+[LocalVhdlSets]
+NetlistCompilation=1
+EnableVHDL93Key=0
+EnableVHDL2002Key=0
+EnableVHDL2008Key=1
+EnableVHDL2019Key=0
+DisableVHDL87Key=0
+Syntax RelaxLRM=0
+MaxErrorsKey=100
+CompileWithDebug=0
+OptimizationLevel=3
+DisableRangeChecks=0
+ProtectLevel=0
+IncrementalCompilation=0
+AdditionalOptions=

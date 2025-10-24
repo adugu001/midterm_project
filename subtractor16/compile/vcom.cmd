@@ -1,0 +1,1 @@
+-w -d C:/My_Designs/midterm_project/subtractor16/compile -s C:/My_Designs/midterm_project/library.cfg -j C:/My_Designs/midterm_project/subtractor16/projlib.cfg -work subtractor16 -O3 -e 100 -work subtractor16 -2008 C:/My_Designs/midterm_project/subtractor16/src/subtractor16_tb.vhd 

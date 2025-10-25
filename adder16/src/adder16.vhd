@@ -21,12 +21,14 @@ begin
 		variable R_v : STD_LOGIC_VECTOR(16 downto 0);
     begin	
 		--convert to int
-        A_int := TO_INTEGER(SIGNED(A));
-        B_int := TO_INTEGER(SIGNED(B));   
-		c_int := TO_INTEGER(SIGNED('0'&c_in)); 
+        A_int := TO_INTEGER(UNSIGNED(A));
+        B_int := TO_INTEGER(UNSIGNED(B));   	
+		if c_in = '1' then c_int := 1;
+		else c_int := 0; 
+		end if;
 		--calc
         R_int := A_int + B_int + c_int;
-		R_v   := STD_LOGIC_VECTOR(TO_SIGNED(R_int,17));  
+		R_v   := STD_LOGIC_VECTOR(TO_UNSIGNED(R_int,17));  
 		-- assign
 		c_out <= R_v(16);
         R     <= R_v(15 downto 0);

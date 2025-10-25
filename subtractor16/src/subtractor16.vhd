@@ -24,9 +24,8 @@ begin
 		--convert to int
         A_int := TO_INTEGER(SIGNED(A));
         B_int := TO_INTEGER(SIGNED(B));   
-		C_int := 1;
 		--calc
-        R_int := A_int + B_int + c_int;
+        R_int := A_int - B_int;
 		R_v   := STD_LOGIC_VECTOR(TO_SIGNED(R_int,17)); 
 		--assign
 		c_out <=  R_v(16);
@@ -38,8 +37,8 @@ architecture structural of subtractor16 is
 signal not_b : STD_LOGIC_VECTOR(15 downto 0);  
 begin  	   
 	--invert B
-	GEN: for i in 0 to 16 generate				 --1 gate deep so crit path = 10ns
-		u0_not: entity gates.not1(structural)		 
+	GEN: for i in 0 to 15 generate				 --1 gate deep so crit path = 10ns
+		u0_not: entity gates.not1(rtl)		 
         	port map ( 
 				a_in  => B(i), 
 				z_out => not_b(i)

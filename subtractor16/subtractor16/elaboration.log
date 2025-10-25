@@ -1,4 +1,4 @@
-Active-HDL 15.0.260.9131 2025-10-24 17:04:31
+Active-HDL 15.0.260.9131 2025-10-25 17:25:45
 
 Elaboration top modules:
 Architecture                  behavioral(subtractor16_tb)
@@ -11,6 +11,7 @@ subtractor16_tb | behavioral   | subtractor16 |      | 15.0.260.9131 (Windows64)
 subtractor16    | behavioral   | subtractor16 |      | 15.0.260.9131 (Windows64) | -O3 -2008
 subtractor16    | structural   | subtractor16 |      | 15.0.260.9131 (Windows64) | -O3 -2008
 adder16         | structural   | adder16      |      | 15.0.260.9131 (Windows64) | -O3
+not1            | rtl          | gates        |      | 15.0.260.9131 (Windows64) | -O3
 fullAdder       | structural   | full_adder   |      | 15.0.260.9131 (Windows64) | -O3
 halfAdder       | structural   | half_adder   |      | 15.0.260.9131 (Windows64) | -O3
 xor2            | rtl          | gates        |      | 15.0.260.9131 (Windows64) | -O3
@@ -38,3 +39,9 @@ ieee                           | Standard IEEE packages library
 std                            | Standard VHDL library
 subtractor16                   | None
 -------------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+subtractor16_tb subtractor16_tb behavioral
+
+
+The performance of simulation is reduced. Version EDU Edition

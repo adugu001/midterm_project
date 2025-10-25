@@ -56,9 +56,13 @@ extension11=asdb;awc;asdbc;asdbe
 [Files]
 /subtractor16.vhd=-1
 /subtractor16_tb.vhd=-1
+/subtractor16_tb_wf.asdb=-1
+/subtractor16_tb_wf.awc=-1
 [Files.Data]
 .\src\subtractor16.vhd=VHDL Source Code
 .\src\subtractor16_tb.vhd=VHDL Source Code
+.\src\subtractor16_tb_wf.asdb=Accelerated Waveform File
+.\src\subtractor16_tb_wf.awc=Accelerated Waveform Configuration
 [LocalVhdlSets]
 NetlistCompilation=1
 EnableVHDL93Key=0
@@ -75,6 +79,6 @@ ProtectLevel=0
 IncrementalCompilation=0
 AdditionalOptions=
 [HierarchyViewer]
-HierarchyInformation=
+HierarchyInformation=subtractor16_tb|behavioral|0
 ShowHide=ShowTopLevel
 Selected=

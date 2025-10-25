@@ -64,16 +64,41 @@ begin
 	variable A_int, B_int, c_int, R_int, cout_int : INTEGER;
     begin
         SPECIAL_CASES: for i in Test_cases'range loop 
-			--assign
+			--assign	
+			A_int := TO_INTEGER(SIGNED(Test_cases(i).A_in));
+			B_int := TO_INTEGER(SIGNED(Test_cases(i).B_in)); 
+			R_int := TO_INTEGER(SIGNED(Test_cases(i).Sum));
 			A_sig   <= Test_cases(i).A_in;
 			B_sig   <= Test_cases(i).B_in;
 			c_sig   <= Test_cases(i).C_in;  
 			wait for DELTA_DELAY;
 			--assert
 			assert (R_beh = Test_cases(i).Sum and cout_beh = Test_cases(i).Cout) 
-				report "behavioral special cases test fail"; 
-			assert (R_str = Test_cases(i).Sum and cout_str = Test_cases(i).Cout) 
-				report "structural special cases test fail";
+			report 	"behavioral fail" & LF &
+					"A        " & INTEGER'IMAGE(TO_INTEGER(SIGNED(Test_cases(i).A_in))) & LF &
+					"A_sig    " & INTEGER'IMAGE(TO_INTEGER(SIGNED(A_sig))) & LF &
+					"B        " & INTEGER'IMAGE(TO_INTEGER(SIGNED(Test_cases(i).B_in))) & LF &
+					"B_sig    " & INTEGER'IMAGE(TO_INTEGER(SIGNED(B_sig))) & LF &	 
+					"C        " & STD_LOGIC'IMAGE(Test_cases(i).C_IN) & LF &
+					"C_sig    " & STD_LOGIC'IMAGE(C_sig) & LF &
+					"Sum      " & INTEGER'IMAGE(TO_INTEGER(SIGNED(Test_cases(i).SUM))) & LF &
+					"R        " & INTEGER'IMAGE(TO_INTEGER(SIGNED(R_beh))) & LF &
+					"cout     " & STD_LOGIC'IMAGE(Test_cases(i).Cout) & LF &
+					"cout_sig " & STD_LOGIC'IMAGE(cout_beh);
+			
+			assert (R_str = Test_cases(i).Sum and cout_str = Test_cases(i).Cout) 	
+			report 	"behavioral fail" & LF &
+					"A        " & INTEGER'IMAGE(TO_INTEGER(SIGNED(Test_cases(i).A_in))) & LF &
+					"A_sig    " & INTEGER'IMAGE(TO_INTEGER(SIGNED(A_sig))) & LF &
+					"B        " & INTEGER'IMAGE(TO_INTEGER(SIGNED(Test_cases(i).B_in))) & LF &
+					"B_sig    " & INTEGER'IMAGE(TO_INTEGER(SIGNED(B_sig))) & LF &	 
+					"C        " & STD_LOGIC'IMAGE(Test_cases(i).C_IN) & LF &
+					"C_sig    " & STD_LOGIC'IMAGE(C_sig) & LF &
+					"Sum      " & INTEGER'IMAGE(TO_INTEGER(SIGNED(Test_cases(i).SUM))) & LF &
+					"R        " & INTEGER'IMAGE(TO_INTEGER(SIGNED(R_str))) & LF &
+					"cout     " & STD_LOGIC'IMAGE(Test_cases(i).Cout) & LF &
+					"cout_sig " & STD_LOGIC'IMAGE(cout_str);
+		
 		end loop;
 		
 		sanity_check_loop: for i in 0 to 1000 loop	
@@ -95,7 +120,6 @@ begin
 				assert (UNSIGNED(R_str) = R_int) report "structural sanity check fail"; 
 			end loop;
 		end loop;
-        --put test here
 
         wait;
 

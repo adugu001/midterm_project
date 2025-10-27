@@ -18,15 +18,20 @@ end subtractor16;
 architecture behavioral of subtractor16 is
 begin
     beh_process: process (all)
-	    variable A_int, B_int, c_int, R_int : INTEGER;
+		variable A_int, B_int, R_int : INTEGER;	
+		variable A_v, B_v : STD_LOGIC_VECTOR(15 downto 0);
 		variable R_v : STD_LOGIC_VECTOR(16 downto 0);
     begin 
-		--convert to int
-        A_int := TO_INTEGER(SIGNED(A));
-        B_int := TO_INTEGER(SIGNED(B));   
+		--convert subtraction logic
+		A_v := A;					 --A
+		B_v := NOT B;	 --B'+1	 
+		
+		--treat as unsigned addition
+        A_int := TO_INTEGER(UNSIGNED(A_v));
+        B_int := TO_INTEGER(UNSIGNED(B_v));   
 		--calc
-        R_int := A_int - B_int;
-		R_v   := STD_LOGIC_VECTOR(TO_SIGNED(R_int,17)); 
+        R_int := A_int + B_int + 1;	
+		R_v   := STD_LOGIC_VECTOR(TO_UNSIGNED(R_int,17)); 
 		--assign
 		c_out <=  R_v(16);
         R     <= R_v(15 downto 0);

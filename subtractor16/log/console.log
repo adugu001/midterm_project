@@ -18,42 +18,1242 @@ asim -O5 +access +r +m+subtractor16_tb subtractor16_tb behavioral
 # KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6635 kB (elbread=430 elab2=6063 kernel=141 sdf=0)
+# Allocation: Simulator allocated 6633 kB (elbread=430 elab2=6059 kernel=143 sdf=0)
 # KERNEL: ASDB file was created in location C:\My_Designs\midterm_project\subtractor16\src\wave.asdb
-#  5:25 PM, Saturday, October 25, 2025
+#  8:56 PM, Sunday, October 26, 2025
+#  Simulation has been initialized
+run @3us
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 0
+# A_sig    : 0
+# B_int    : 0
+# B_sig    : 0
+# R_int    : 0
+# R_beh    : 0
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 651 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 0
+# A_sig    : 0
+# B_int    : 1
+# B_sig    : 1
+# R_int    : -1
+# R_beh    : -1
+# cout_exp : '0'
+# Cout_beh : '1'
+# EXECUTION:: Time: 1302 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 0
+# A_sig    : 0
+# B_int    : 2
+# B_sig    : 2
+# R_int    : -2
+# R_beh    : -2
+# cout_exp : '0'
+# Cout_beh : '1'
+# EXECUTION:: Time: 1953 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 0
+# A_sig    : 0
+# B_int    : 3
+# B_sig    : 3
+# R_int    : -3
+# R_beh    : -3
+# cout_exp : '0'
+# Cout_beh : '1'
+# EXECUTION:: Time: 2604 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# KERNEL: stopped at time: 3 us
+run
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 0
+# A_sig    : 0
+# B_int    : 4
+# B_sig    : 4
+# R_int    : -4
+# R_beh    : -4
+# cout_exp : '0'
+# Cout_beh : '1'
+# EXECUTION:: Time: 3255 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 0
+# A_sig    : 0
+# B_int    : 5
+# B_sig    : 5
+# R_int    : -5
+# R_beh    : -5
+# cout_exp : '0'
+# Cout_beh : '1'
+# EXECUTION:: Time: 3906 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 1
+# A_sig    : 1
+# B_int    : 0
+# B_sig    : 0
+# R_int    : 1
+# R_beh    : 1
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 4557 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 1
+# A_sig    : 1
+# B_int    : 1
+# B_sig    : 1
+# R_int    : 0
+# R_beh    : 0
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 5208 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 1
+# A_sig    : 1
+# B_int    : 2
+# B_sig    : 2
+# R_int    : -1
+# R_beh    : -1
+# cout_exp : '0'
+# Cout_beh : '1'
+# EXECUTION:: Time: 5859 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 1
+# A_sig    : 1
+# B_int    : 3
+# B_sig    : 3
+# R_int    : -2
+# R_beh    : -2
+# cout_exp : '0'
+# Cout_beh : '1'
+# EXECUTION:: Time: 6510 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 1
+# A_sig    : 1
+# B_int    : 4
+# B_sig    : 4
+# R_int    : -3
+# R_beh    : -3
+# cout_exp : '0'
+# Cout_beh : '1'
+# EXECUTION:: Time: 7161 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 1
+# A_sig    : 1
+# B_int    : 5
+# B_sig    : 5
+# R_int    : -4
+# R_beh    : -4
+# cout_exp : '0'
+# Cout_beh : '1'
+# EXECUTION:: Time: 7812 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 2
+# A_sig    : 2
+# B_int    : 0
+# B_sig    : 0
+# R_int    : 2
+# R_beh    : 2
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 8463 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 2
+# A_sig    : 2
+# B_int    : 1
+# B_sig    : 1
+# R_int    : 1
+# R_beh    : 1
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 9114 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 2
+# A_sig    : 2
+# B_int    : 2
+# B_sig    : 2
+# R_int    : 0
+# R_beh    : 0
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 9765 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 2
+# A_sig    : 2
+# B_int    : 3
+# B_sig    : 3
+# R_int    : -1
+# R_beh    : -1
+# cout_exp : '0'
+# Cout_beh : '1'
+# EXECUTION:: Time: 10416 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 2
+# A_sig    : 2
+# B_int    : 4
+# B_sig    : 4
+# R_int    : -2
+# R_beh    : -2
+# cout_exp : '0'
+# Cout_beh : '1'
+# EXECUTION:: Time: 11067 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 2
+# A_sig    : 2
+# B_int    : 5
+# B_sig    : 5
+# R_int    : -3
+# R_beh    : -3
+# cout_exp : '0'
+# Cout_beh : '1'
+# EXECUTION:: Time: 11718 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 3
+# A_sig    : 3
+# B_int    : 0
+# B_sig    : 0
+# R_int    : 3
+# R_beh    : 3
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 12369 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 3
+# A_sig    : 3
+# B_int    : 1
+# B_sig    : 1
+# R_int    : 2
+# R_beh    : 2
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 13020 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 3
+# A_sig    : 3
+# B_int    : 2
+# B_sig    : 2
+# R_int    : 1
+# R_beh    : 1
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 13671 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 3
+# A_sig    : 3
+# B_int    : 3
+# B_sig    : 3
+# R_int    : 0
+# R_beh    : 0
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 14322 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 3
+# A_sig    : 3
+# B_int    : 4
+# B_sig    : 4
+# R_int    : -1
+# R_beh    : -1
+# cout_exp : '0'
+# Cout_beh : '1'
+# EXECUTION:: Time: 14973 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 3
+# A_sig    : 3
+# B_int    : 5
+# B_sig    : 5
+# R_int    : -2
+# R_beh    : -2
+# cout_exp : '0'
+# Cout_beh : '1'
+# EXECUTION:: Time: 15624 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 4
+# A_sig    : 4
+# B_int    : 0
+# B_sig    : 0
+# R_int    : 4
+# R_beh    : 4
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 16275 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 4
+# A_sig    : 4
+# B_int    : 1
+# B_sig    : 1
+# R_int    : 3
+# R_beh    : 3
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 16926 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 4
+# A_sig    : 4
+# B_int    : 2
+# B_sig    : 2
+# R_int    : 2
+# R_beh    : 2
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 17577 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 4
+# A_sig    : 4
+# B_int    : 3
+# B_sig    : 3
+# R_int    : 1
+# R_beh    : 1
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 18228 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 4
+# A_sig    : 4
+# B_int    : 4
+# B_sig    : 4
+# R_int    : 0
+# R_beh    : 0
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 18879 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 4
+# A_sig    : 4
+# B_int    : 5
+# B_sig    : 5
+# R_int    : -1
+# R_beh    : -1
+# cout_exp : '0'
+# Cout_beh : '1'
+# EXECUTION:: Time: 19530 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 5
+# A_sig    : 5
+# B_int    : 0
+# B_sig    : 0
+# R_int    : 5
+# R_beh    : 5
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 20181 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 5
+# A_sig    : 5
+# B_int    : 1
+# B_sig    : 1
+# R_int    : 4
+# R_beh    : 4
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 20832 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 5
+# A_sig    : 5
+# B_int    : 2
+# B_sig    : 2
+# R_int    : 3
+# R_beh    : 3
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 21483 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 5
+# A_sig    : 5
+# B_int    : 3
+# B_sig    : 3
+# R_int    : 2
+# R_beh    : 2
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 22134 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 5
+# A_sig    : 5
+# B_int    : 4
+# B_sig    : 4
+# R_int    : 1
+# R_beh    : 1
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 22785 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 5
+# A_sig    : 5
+# B_int    : 5
+# B_sig    : 5
+# R_int    : 0
+# R_beh    : 0
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 23436 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 0
+# A_sig    : 0
+# B_int    : 0
+# B_sig    : 0
+# R_int    : 0
+# R_beh    : 0
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 24087 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 0
+# A_sig    : 0
+# B_int    : 1
+# B_sig    : 1
+# R_int    : -1
+# R_beh    : -1
+# cout_exp : '0'
+# Cout_beh : '1'
+# EXECUTION:: Time: 24738 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 0
+# A_sig    : 0
+# B_int    : 2
+# B_sig    : 2
+# R_int    : -2
+# R_beh    : -2
+# cout_exp : '0'
+# Cout_beh : '1'
+# EXECUTION:: Time: 25389 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 0
+# A_sig    : 0
+# B_int    : 3
+# B_sig    : 3
+# R_int    : -3
+# R_beh    : -3
+# cout_exp : '0'
+# Cout_beh : '1'
+# EXECUTION:: Time: 26040 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 0
+# A_sig    : 0
+# B_int    : 4
+# B_sig    : 4
+# R_int    : -4
+# R_beh    : -4
+# cout_exp : '0'
+# Cout_beh : '1'
+# EXECUTION:: Time: 26691 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 0
+# A_sig    : 0
+# B_int    : 5
+# B_sig    : 5
+# R_int    : -5
+# R_beh    : -5
+# cout_exp : '0'
+# Cout_beh : '1'
+# EXECUTION:: Time: 27342 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 0
+# A_sig    : 0
+# B_int    : 0
+# B_sig    : 0
+# R_int    : 0
+# R_beh    : 0
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 47523 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 1
+# A_sig    : 1
+# B_int    : 0
+# B_sig    : 0
+# R_int    : 1
+# R_beh    : 1
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 51429 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 2
+# A_sig    : 2
+# B_int    : 0
+# B_sig    : 0
+# R_int    : 2
+# R_beh    : 2
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 55335 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 3
+# A_sig    : 3
+# B_int    : 0
+# B_sig    : 0
+# R_int    : 3
+# R_beh    : 3
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 59241 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 4
+# A_sig    : 4
+# B_int    : 0
+# B_sig    : 0
+# R_int    : 4
+# R_beh    : 4
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 63147 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 5
+# A_sig    : 5
+# B_int    : 0
+# B_sig    : 0
+# R_int    : 5
+# R_beh    : 5
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 67053 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 0
+# A_sig    : 0
+# B_int    : 0
+# B_sig    : 0
+# R_int    : 0
+# R_beh    : 0
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 70959 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : -1
+# A_sig    : -1
+# B_int    : -1
+# B_sig    : -1
+# R_int    : 0
+# R_beh    : 0
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 75516 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : -1
+# A_sig    : -1
+# B_int    : -2
+# B_sig    : -2
+# R_int    : 1
+# R_beh    : 1
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 76167 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : -1
+# A_sig    : -1
+# B_int    : -3
+# B_sig    : -3
+# R_int    : 2
+# R_beh    : 2
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 76818 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : -1
+# A_sig    : -1
+# B_int    : -4
+# B_sig    : -4
+# R_int    : 3
+# R_beh    : 3
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 77469 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : -1
+# A_sig    : -1
+# B_int    : -5
+# B_sig    : -5
+# R_int    : 4
+# R_beh    : 4
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 78120 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : -2
+# A_sig    : -2
+# B_int    : -1
+# B_sig    : -1
+# R_int    : -1
+# R_beh    : -1
+# cout_exp : '0'
+# Cout_beh : '1'
+# EXECUTION:: Time: 79422 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : -2
+# A_sig    : -2
+# B_int    : -2
+# B_sig    : -2
+# R_int    : 0
+# R_beh    : 0
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 80073 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : -2
+# A_sig    : -2
+# B_int    : -3
+# B_sig    : -3
+# R_int    : 1
+# R_beh    : 1
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 80724 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : -2
+# A_sig    : -2
+# B_int    : -4
+# B_sig    : -4
+# R_int    : 2
+# R_beh    : 2
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 81375 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : -2
+# A_sig    : -2
+# B_int    : -5
+# B_sig    : -5
+# R_int    : 3
+# R_beh    : 3
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 82026 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : -3
+# A_sig    : -3
+# B_int    : -1
+# B_sig    : -1
+# R_int    : -2
+# R_beh    : -2
+# cout_exp : '0'
+# Cout_beh : '1'
+# EXECUTION:: Time: 83328 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : -3
+# A_sig    : -3
+# B_int    : -2
+# B_sig    : -2
+# R_int    : -1
+# R_beh    : -1
+# cout_exp : '0'
+# Cout_beh : '1'
+# EXECUTION:: Time: 83979 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : -3
+# A_sig    : -3
+# B_int    : -3
+# B_sig    : -3
+# R_int    : 0
+# R_beh    : 0
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 84630 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : -3
+# A_sig    : -3
+# B_int    : -4
+# B_sig    : -4
+# R_int    : 1
+# R_beh    : 1
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 85281 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : -3
+# A_sig    : -3
+# B_int    : -5
+# B_sig    : -5
+# R_int    : 2
+# R_beh    : 2
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 85932 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : -4
+# A_sig    : -4
+# B_int    : -1
+# B_sig    : -1
+# R_int    : -3
+# R_beh    : -3
+# cout_exp : '0'
+# Cout_beh : '1'
+# EXECUTION:: Time: 87234 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : -4
+# A_sig    : -4
+# B_int    : -2
+# B_sig    : -2
+# R_int    : -2
+# R_beh    : -2
+# cout_exp : '0'
+# Cout_beh : '1'
+# EXECUTION:: Time: 87885 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : -4
+# A_sig    : -4
+# B_int    : -3
+# B_sig    : -3
+# R_int    : -1
+# R_beh    : -1
+# cout_exp : '0'
+# Cout_beh : '1'
+# EXECUTION:: Time: 88536 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : -4
+# A_sig    : -4
+# B_int    : -4
+# B_sig    : -4
+# R_int    : 0
+# R_beh    : 0
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 89187 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : -4
+# A_sig    : -4
+# B_int    : -5
+# B_sig    : -5
+# R_int    : 1
+# R_beh    : 1
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 89838 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : -5
+# A_sig    : -5
+# B_int    : -1
+# B_sig    : -1
+# R_int    : -4
+# R_beh    : -4
+# cout_exp : '0'
+# Cout_beh : '1'
+# EXECUTION:: Time: 91140 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : -5
+# A_sig    : -5
+# B_int    : -2
+# B_sig    : -2
+# R_int    : -3
+# R_beh    : -3
+# cout_exp : '0'
+# Cout_beh : '1'
+# EXECUTION:: Time: 91791 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : -5
+# A_sig    : -5
+# B_int    : -3
+# B_sig    : -3
+# R_int    : -2
+# R_beh    : -2
+# cout_exp : '0'
+# Cout_beh : '1'
+# EXECUTION:: Time: 92442 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : -5
+# A_sig    : -5
+# B_int    : -4
+# B_sig    : -4
+# R_int    : -1
+# R_beh    : -1
+# cout_exp : '0'
+# Cout_beh : '1'
+# EXECUTION:: Time: 93093 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : -5
+# A_sig    : -5
+# B_int    : -5
+# B_sig    : -5
+# R_int    : 0
+# R_beh    : 0
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 93744 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# Warning: WAVEFORM: Object matching /subtractor16_tb/uut_beh/A not found in C:/My_Designs/midterm_project/subtractor16/src/subtractor16_tb_wf.asdb.
+# Warning: WAVEFORM: Object matching /subtractor16_tb/uut_beh/B not found in C:/My_Designs/midterm_project/subtractor16/src/subtractor16_tb_wf.asdb.
+# Warning: WAVEFORM: Object matching /subtractor16_tb/uut_beh/R not found in C:/My_Designs/midterm_project/subtractor16/src/subtractor16_tb_wf.asdb.
+# Warning: WAVEFORM: Object matching /subtractor16_tb/uut_beh/c_out not found in C:/My_Designs/midterm_project/subtractor16/src/subtractor16_tb_wf.asdb.
+# Warning: WAVEFORM: Object matching /subtractor16_tb/uut_beh/beh_process/A_int not found in C:/My_Designs/midterm_project/subtractor16/src/subtractor16_tb_wf.asdb.
+# Warning: WAVEFORM: Object matching /subtractor16_tb/uut_beh/beh_process/B_int not found in C:/My_Designs/midterm_project/subtractor16/src/subtractor16_tb_wf.asdb.
+# Warning: WAVEFORM: Object matching /subtractor16_tb/uut_beh/beh_process/c_int not found in C:/My_Designs/midterm_project/subtractor16/src/subtractor16_tb_wf.asdb.
+# Warning: WAVEFORM: Object matching /subtractor16_tb/uut_beh/beh_process/R_int not found in C:/My_Designs/midterm_project/subtractor16/src/subtractor16_tb_wf.asdb.
+# Warning: WAVEFORM: Object matching /subtractor16_tb/uut_beh/beh_process/R_v not found in C:/My_Designs/midterm_project/subtractor16/src/subtractor16_tb_wf.asdb.
+endsim
+# VSIM: Simulation has finished.
+acom -dbg -e 100 -work subtractor16 -2008  $dsn/src/subtractor16.vhd $dsn/src/subtractor16_tb.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "behavioral" of Entity "subtractor16"
+# Compile Architecture "structural" of Entity "subtractor16"
+# Compile Entity "subtractor16_tb"
+# Compile Architecture "behavioral" of Entity "subtractor16_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+# Warning: WAVEFORM: Object matching /subtractor16_tb/uut_beh/beh_process/A_int not found in C:/My_Designs/midterm_project/subtractor16/src/subtractor16_tb_wf.asdb.
+# Warning: WAVEFORM: Object matching /subtractor16_tb/uut_beh/beh_process/B_int not found in C:/My_Designs/midterm_project/subtractor16/src/subtractor16_tb_wf.asdb.
+# Warning: WAVEFORM: Object matching /subtractor16_tb/uut_beh/beh_process/c_int not found in C:/My_Designs/midterm_project/subtractor16/src/subtractor16_tb_wf.asdb.
+# Warning: WAVEFORM: Object matching /subtractor16_tb/uut_beh/beh_process/R_int not found in C:/My_Designs/midterm_project/subtractor16/src/subtractor16_tb_wf.asdb.
+# Warning: WAVEFORM: Object matching /subtractor16_tb/uut_beh/beh_process/R_v not found in C:/My_Designs/midterm_project/subtractor16/src/subtractor16_tb_wf.asdb.
+acom -dbg -e 100 -work subtractor16 -2008  $dsn/src/subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "behavioral" of Entity "subtractor16"
+# Compile Architecture "structural" of Entity "subtractor16"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -dbg -e 100 -work subtractor16 -2008  $dsn/src/subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "behavioral" of Entity "subtractor16"
+# Compile Architecture "structural" of Entity "subtractor16"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+asim -O5 +access +r +m+subtractor16_tb subtractor16_tb behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6633 kB (elbread=430 elab2=6060 kernel=143 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\midterm_project\subtractor16\src\wave.asdb
+#  9:02 PM, Sunday, October 26, 2025
+#  Simulation has been initialized
+run @3us
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 0
+# A_sig    : 0
+# B_int    : 0
+# B_sig    : 0
+# R_int    : 0
+# R_beh    : 1
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 651 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 0
+# A_sig    : 0
+# B_int    : 1
+# B_sig    : 1
+# R_int    : -1
+# R_beh    : 2
+# cout_exp : '0'
+# Cout_beh : '0'
+# EXECUTION:: Time: 1302 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 0
+# A_sig    : 0
+# B_int    : 2
+# B_sig    : 2
+# R_int    : -2
+# R_beh    : 3
+# cout_exp : '0'
+# Cout_beh : '0'
+# EXECUTION:: Time: 1953 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 0
+# A_sig    : 0
+# B_int    : 3
+# B_sig    : 3
+# R_int    : -3
+# R_beh    : 4
+# cout_exp : '0'
+# Cout_beh : '0'
+# EXECUTION:: Time: 2604 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# KERNEL: stopped at time: 3 us
+acom -dbg -e 100 -work subtractor16 -2008  $dsn/src/subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "behavioral" of Entity "subtractor16"
+# Compile Architecture "structural" of Entity "subtractor16"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6634 kB (elbread=430 elab2=6060 kernel=143 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\midterm_project\subtractor16\src\wave.asdb
+#  9:03 PM, Sunday, October 26, 2025
+#  Simulation has been initialized
+run @3us
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 0
+# A_sig    : 0
+# B_int    : 0
+# B_sig    : 0
+# R_int    : 0
+# R_beh    : 1
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 651 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 0
+# A_sig    : 0
+# B_int    : 1
+# B_sig    : 1
+# R_int    : -1
+# R_beh    : 2
+# cout_exp : '0'
+# Cout_beh : '0'
+# EXECUTION:: Time: 1302 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 0
+# A_sig    : 0
+# B_int    : 2
+# B_sig    : 2
+# R_int    : -2
+# R_beh    : 3
+# cout_exp : '0'
+# Cout_beh : '0'
+# EXECUTION:: Time: 1953 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 0
+# A_sig    : 0
+# B_int    : 3
+# B_sig    : 3
+# R_int    : -3
+# R_beh    : 4
+# cout_exp : '0'
+# Cout_beh : '0'
+# EXECUTION:: Time: 2604 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# KERNEL: stopped at time: 3 us
+acom -dbg -e 100 -work subtractor16 -2008  $dsn/src/subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "behavioral" of Entity "subtractor16"
+# Compile Architecture "structural" of Entity "subtractor16"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6633 kB (elbread=430 elab2=6059 kernel=143 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\midterm_project\subtractor16\src\wave.asdb
+#  9:06 PM, Sunday, October 26, 2025
+#  Simulation has been initialized
+run @3us
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 0
+# A_sig    : 0
+# B_int    : 0
+# B_sig    : 0
+# R_int    : 0
+# R_beh    : 0
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 651 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 0
+# A_sig    : 0
+# B_int    : 1
+# B_sig    : 1
+# R_int    : -1
+# R_beh    : -1
+# cout_exp : '0'
+# Cout_beh : '1'
+# EXECUTION:: Time: 1302 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 0
+# A_sig    : 0
+# B_int    : 2
+# B_sig    : 2
+# R_int    : -2
+# R_beh    : -2
+# cout_exp : '0'
+# Cout_beh : '1'
+# EXECUTION:: Time: 1953 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 0
+# A_sig    : 0
+# B_int    : 3
+# B_sig    : 3
+# R_int    : -3
+# R_beh    : -3
+# cout_exp : '0'
+# Cout_beh : '1'
+# EXECUTION:: Time: 2604 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# KERNEL: stopped at time: 3 us
+acom -dbg -e 100 -work subtractor16 -2008  $dsn/src/subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "behavioral" of Entity "subtractor16"
+# Error: COMP96_0093: subtractor16.vhd : (25, 17): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: subtractor16.vhd : (25, 20): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "SIZE_RES" parameter.
+# Error: COMP96_0617: subtractor16.vhd : (25, 10): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: subtractor16.vhd : (26, 17): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: subtractor16.vhd : (26, 10): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Compile Architecture "structural" of Entity "subtractor16"
+# Compile failure 5 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work subtractor16 -2008  $dsn/src/subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "behavioral" of Entity "subtractor16"
+# Error: COMP96_0367: subtractor16.vhd : (25, 10): Improper array length (16). Expected length is 17.
+# Warning: COMP96_0367: subtractor16.vhd : (26, 10): Improper array length (16). Expected length is 17.
+# Compile Architecture "structural" of Entity "subtractor16"
+# Compile failure 1 Errors 1 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work subtractor16 -2008  $dsn/src/subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "behavioral" of Entity "subtractor16"
+# Compile Architecture "structural" of Entity "subtractor16"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -dbg -e 100 -work subtractor16 -2008  $dsn/src/subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "behavioral" of Entity "subtractor16"
+# Compile Architecture "structural" of Entity "subtractor16"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6634 kB (elbread=430 elab2=6060 kernel=143 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\midterm_project\subtractor16\src\wave.asdb
+#  9:13 PM, Sunday, October 26, 2025
+#  Simulation has been initialized
+run @3us
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 0
+# A_sig    : 0
+# B_int    : 0
+# B_sig    : 0
+# R_int    : 0
+# R_beh    : -2
+# cout_exp : '1'
+# Cout_beh : '0'
+# EXECUTION:: Time: 651 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# EXECUTION:: ERROR  : behavioral fail
+# A_int    : 0
+# A_sig    : 0
+# B_int    : 2
+# B_sig    : 2
+# R_int    : -2
+# R_beh    : -4
+# cout_exp : '0'
+# Cout_beh : '0'
+# EXECUTION:: Time: 1953 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
+# KERNEL: stopped at time: 3 us
+acom -dbg -e 100 -work subtractor16 -2008  $dsn/src/subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "behavioral" of Entity "subtractor16"
+# Compile Architecture "structural" of Entity "subtractor16"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6634 kB (elbread=430 elab2=6060 kernel=143 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\midterm_project\subtractor16\src\wave.asdb
+#  9:14 PM, Sunday, October 26, 2025
+#  Simulation has been initialized
+run @3us
+# KERNEL: stopped at time: 3 us
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -dbg -e 100 -work subtractor16 -2008  $dsn/src/subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "behavioral" of Entity "subtractor16"
+# Compile Architecture "structural" of Entity "subtractor16"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6634 kB (elbread=430 elab2=6060 kernel=143 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\midterm_project\subtractor16\src\wave.asdb
+#  9:14 PM, Sunday, October 26, 2025
 #  Simulation has been initialized
 run
-# EXECUTION:: ERROR  : behaviroal fail
-# Expected  C_OUT: 0 
-# Actual C_OUT :   '1'
-# EXECUTION:: Time: 6867300 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
-# EXECUTION:: ERROR  : structural fail
-# Expected  C_OUT: 0 
-# Actual C_OUT :   '1'
-# EXECUTION:: Time: 6867300 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
-# EXECUTION:: ERROR  : structural fail
-# Expected  C_OUT: 1 
-# Actual C_OUT :   '0'
-# EXECUTION:: Time: 6867960 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
-# EXECUTION:: ERROR  : structural fail
-# Expected  C_OUT: 0 
-# Actual C_OUT :   '1'
-# EXECUTION:: Time: 6868620 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
-# EXECUTION:: ERROR  : behaviroal fail
-# Expected  C_OUT: 1 
-# Actual C_OUT :   '0'
-# EXECUTION:: Time: 6869280 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
-# EXECUTION:: ERROR  : structural fail
-# Expected  C_OUT: 1 
-# Actual C_OUT :   '0'
-# EXECUTION:: Time: 6869280 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
-# EXECUTION:: ERROR  : structural fail
-# Expected  C_OUT: 1 
-# Actual C_OUT :   '0'
-# EXECUTION:: Time: 6869940 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
-# EXECUTION:: ERROR  : structural fail
-# Expected  C_OUT: 0 
-# Actual C_OUT :   '1'
-# EXECUTION:: Time: 6870600 ns,  Iteration: 0,  Instance: /subtractor16_tb,  Process: test.
 # KERNEL: Simulation has finished. There are no more test vectors to simulate.
-# Adding file C:\My_Designs\midterm_project\subtractor16\src\subtractor16_tb_wf.awc ... Done
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/midterm_project/subtractor16/src/subtractor16_tb_wf.asdb'.
+# Waveform file 'C:/My_Designs/midterm_project/subtractor16/src/subtractor16_tb_wf.awc' connected to 'C:/My_Designs/midterm_project/subtractor16/src/subtractor16_tb_wf.asdb'.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+subtractor16_tb subtractor16_tb behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6634 kB (elbread=430 elab2=6060 kernel=143 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\midterm_project\subtractor16\src\wave.asdb
+#  9:17 PM, Sunday, October 26, 2025
+#  Simulation has been initialized
+# VSIM: 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/midterm_project/subtractor16/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -dbg -e 100 -work subtractor16 -2008  $dsn/src/subtractor16.vhd $dsn/src/subtractor16_tb.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "behavioral" of Entity "subtractor16"
+# Compile Architecture "structural" of Entity "subtractor16"
+# Compile Entity "subtractor16_tb"
+# Compile Architecture "behavioral" of Entity "subtractor16_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6634 kB (elbread=430 elab2=6060 kernel=143 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\midterm_project\subtractor16\src\wave.asdb
+#  9:18 PM, Sunday, October 26, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/midterm_project/subtractor16/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -dbg -e 100 -work subtractor16 -2008  $dsn/src/subtractor16_tb.vhd
+# Compile Entity "subtractor16_tb"
+# Compile Architecture "behavioral" of Entity "subtractor16_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6634 kB (elbread=430 elab2=6060 kernel=143 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\midterm_project\subtractor16\src\wave.asdb
+#  9:18 PM, Sunday, October 26, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/midterm_project/subtractor16/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -dbg -e 100 -work subtractor16 -2008  $dsn/src/subtractor16_tb.vhd
+# Compile Entity "subtractor16_tb"
+# Compile Architecture "behavioral" of Entity "subtractor16_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6634 kB (elbread=430 elab2=6060 kernel=143 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\midterm_project\subtractor16\src\wave.asdb
+#  9:19 PM, Sunday, October 26, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/midterm_project/subtractor16/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# Design: Design "mux" has been set as active.

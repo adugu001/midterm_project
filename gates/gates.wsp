@@ -396,6 +396,6 @@ WindowWorkspaceInfo="LAAAAAAAAAABAAAA/////////////////////80AAACZAAAAygUAAGgCAAA
 [General]
 CurrentVersion=103
 [CACHEDOC|Aldec.Project.Generic.7|.\gates\gates.adf|]
-Path=/gates_tb
+Path=
 [Gui config]
 RunFor=100 ns

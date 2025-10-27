@@ -1,21 +1,14 @@
-Active-HDL 15.0.260.9131 2025-10-26 20:55:20
+Active-HDL 15.0.260.9131 2025-10-26 21:41:40
 
 Elaboration top modules:
-Architecture                  behavioral(gates_tb)
+Architecture                  behavioral(mux8_tb)
 
 
 -------------------------------------------------------------------------------------------
 Entity   | Architecture | Library | Info | Compiler Version          | Compilation Options
 -------------------------------------------------------------------------------------------
-gates_tb | behavioral   | gates   |      | 15.0.260.9131 (Windows64) | -O3
-and2     | rtl          | gates   |      | 15.0.260.9131 (Windows64) | -O3
-or2      | rtl          | gates   |      | 15.0.260.9131 (Windows64) | -O3
-xor2     | rtl          | gates   |      | 15.0.260.9131 (Windows64) | -O3
-nand2    | rtl          | gates   |      | 15.0.260.9131 (Windows64) | -O3
-nor2     | rtl          | gates   |      | 15.0.260.9131 (Windows64) | -O3
-xnor2    | rtl          | gates   |      | 15.0.260.9131 (Windows64) | -O3
-not1     | rtl          | gates   |      | 15.0.260.9131 (Windows64) | -O3
-buf1     | rtl          | gates   |      | 15.0.260.9131 (Windows64) | -O3
+mux8_tb  | behavioral   | mux     |      | 15.0.260.9131 (Windows64) | -O3 -2008
+mux8     | behavioral   | mux     |      | 15.0.260.9131 (Windows64) | -O3 -2008
 -------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------
@@ -30,13 +23,13 @@ NUMERIC_STD             | ieee    |      | 15.0.260.9131 (Windows64) |  -2008
 -------------------------------------------------------------------------------------------
 Library                 | Comment
 -------------------------------------------------------------------------------------------
-gates                   | None
 ieee                    | Standard IEEE packages library
+mux                     | None
 std                     | Standard VHDL library
 -------------------------------------------------------------------------------------------
 
 
-Simulation Options: asim -O5 +access +r +m+gates_tb gates_tb behavioral
+Simulation Options: asim -O5 +access +r +m+mux8_tb mux8_tb behavioral
 
 
 The performance of simulation is reduced. Version EDU Edition

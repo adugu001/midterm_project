@@ -17,11 +17,11 @@ order=1
 [Expand]
 half_adder=0
 full_adder=0
-adder16=1
-subtractor16=1
+adder16=0
+subtractor16=0
 mult16=0
 alu16=0
 gates=0
-mux=0
+mux=1
 [Settings]
-Active=subtractor16
+Active=mux

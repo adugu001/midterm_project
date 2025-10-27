@@ -17,15 +17,19 @@ entity mux8 is
     );
 end mux8;
 
-architecture rtl of mux8 is
-
+architecture behavioral of mux8 is
 begin
-z_out <=    a0 when sel = "000" else 
-            a1 when sel = "001" else
-            a2 when sel = "010" else
-            a3 when sel = "011" else
-            a4 when sel = "100" else 
-            a5 when sel = "101" else
-            a6 when sel = "110" else
-            a7 when sel = "111";
-end architecture rtl;
+	BEH_PROCESS : process(all)
+	begin
+		if    sel = "000" then z_out <= a0;
+		elsif sel = "001" then z_out <= a1;
+		elsif sel = "010" then z_out <= a2;
+		elsif sel = "011" then z_out <= a3;
+		elsif sel = "100" then z_out <= a4;
+		elsif sel = "101" then z_out <= a5;
+		elsif sel = "110" then z_out <= a6;
+		elsif sel = "111" then z_out <= a7;
+		else  z_out <= 'X'; 
+		end if;
+	end process;			
+end architecture behavioral;  

@@ -1,1 +1,315 @@
-# Design: Design "mux16" has been set as active.
+acom -reorder -dbg -e 100 -work mult16 -2008  $dsn/src/mult16.vhd $dsn/src/mult16_tb.vhd
+# Compile Entity "mult16"
+# Compile Architecture "behavioral" of Entity "mult16"
+# Compile Entity "mult16_tb"
+# Compile Architecture "test" of Entity "mult16_tb"
+# Top-level unit(s) detected:
+# Entity => mult16_tb
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 -L altera -L altera_lnsim -L altera_lnsim_ver -L altera_mf -L altera_mf_ver -L altera_ver -L cyclonev +access +r +m+mult16_tb mult16_tb test
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6596 kB (elbread=427 elab2=6029 kernel=140 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\ulate\Desktop\443\midterm_project\mult16\src\wave.asdb
+#  1:01 PM, Sunday, October 26, 2025
+#  Simulation has been initialized
+run
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /mult16_tb/uut_mult16,  Process: line__37.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /mult16_tb/uut_mult16,  Process: line__37.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /mult16_tb/uut_mult16,  Process: line__37.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /mult16_tb/uut_mult16,  Process: line__37.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# Warning: Cannot set breakpoint. No executable statement found or debugging data is unavailable. Compile source files with the -dbg argument of the acom/alog command or check the Enable Debug option in the Compilation | VHDL/Verilog category of the Design Settings dialog box.
+# Warning: Cannot set breakpoint. No executable statement found or debugging data is unavailable. Compile source files with the -dbg argument of the acom/alog command or check the Enable Debug option in the Compilation | VHDL/Verilog category of the Design Settings dialog box.
+endsim
+# VSIM: Simulation has finished.
+acom -reorder -dbg -e 100 -work mult16 -2008  $dsn/src/mult16.vhd $dsn/src/mult16_tb.vhd
+# Compile Entity "mult16"
+# Compile Architecture "behavioral" of Entity "mult16"
+# Compile Entity "mult16_tb"
+# Compile Architecture "test" of Entity "mult16_tb"
+# Top-level unit(s) detected:
+# Entity => mult16_tb
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+asim -O5 -L altera -L altera_lnsim -L altera_lnsim_ver -L altera_mf -L altera_mf_ver -L altera_ver -L cyclonev +access +r +m+mult16_tb mult16_tb test
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6596 kB (elbread=427 elab2=6029 kernel=140 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\ulate\Desktop\443\midterm_project\mult16\src\wave.asdb
+#  1:02 PM, Sunday, October 26, 2025
+#  Simulation has been initialized
+run
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /mult16_tb/uut_mult16,  Process: line__37.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /mult16_tb/uut_mult16,  Process: line__37.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /mult16_tb/uut_mult16,  Process: line__37.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /mult16_tb/uut_mult16,  Process: line__37.
+# KERNEL: Stopped at time 30 ns + 0.
+# Stopped in "C:/Users/ulate/Desktop/443/midterm_project/mult16/src/mult16_tb.vhd" at line 59 in process of instance "/mult16_tb/stim_proc".
+run
+# KERNEL: Stopped at time 40 ns + 0.
+# Stopped in "C:/Users/ulate/Desktop/443/midterm_project/mult16/src/mult16_tb.vhd" at line 64 in process of instance "/mult16_tb/stim_proc".
+run
+# KERNEL: Stopped at time 40 ns + 0.
+# Stopped in "C:/Users/ulate/Desktop/443/midterm_project/mult16/src/mult16_tb.vhd" at line 66 in process of instance "/mult16_tb/stim_proc".
+run
+# KERNEL: Stopped at time 50 ns + 0.
+# Stopped in "C:/Users/ulate/Desktop/443/midterm_project/mult16/src/mult16_tb.vhd" at line 71 in process of instance "/mult16_tb/stim_proc".
+endsim
+# VSIM: Simulation has finished.
+acom -reorder -dbg -e 100 -work mult16 -2008  $dsn/src/mult16.vhd $dsn/src/mult16_tb.vhd
+# Compile Entity "mult16"
+# Compile Architecture "behavioral" of Entity "mult16"
+# Compile Entity "mult16_tb"
+# Compile Architecture "test" of Entity "mult16_tb"
+# Top-level unit(s) detected:
+# Entity => mult16
+# Error: COMP96_0049: mult16_tb.vhd : (43, 19): Syntax error in expression.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -reorder -dbg -e 100 -work mult16 -2008  $dsn/src/mult16.vhd $dsn/src/mult16_tb.vhd
+# Compile Entity "mult16"
+# Compile Architecture "behavioral" of Entity "mult16"
+# Compile Entity "mult16_tb"
+# Compile Architecture "test" of Entity "mult16_tb"
+# Top-level unit(s) detected:
+# Entity => mult16
+# Error: COMP96_0049: mult16_tb.vhd : (43, 19): Syntax error in expression.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -reorder -dbg -e 100 -work mult16 -2008  $dsn/src/mult16.vhd $dsn/src/mult16_tb.vhd
+# Compile Entity "mult16"
+# Compile Architecture "behavioral" of Entity "mult16"
+# Compile Entity "mult16_tb"
+# Compile Architecture "test" of Entity "mult16_tb"
+# Top-level unit(s) detected:
+# Entity => mult16
+# Error: COMP96_0049: mult16_tb.vhd : (43, 19): Syntax error in expression.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -reorder -dbg -e 100 -work mult16 -2008  $dsn/src/mult16.vhd $dsn/src/mult16_tb.vhd
+# Compile Entity "mult16"
+# Compile Architecture "behavioral" of Entity "mult16"
+# Compile Entity "mult16_tb"
+# Compile Architecture "test" of Entity "mult16_tb"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => mult16_tb
+# Compile Architecture "test" of Entity "mult16_tb"
+# Error: COMP96_0071: mult16_tb.vhd : (43, 20): Operator "=" is not defined for such operands.
+# Error: COMP96_0077: mult16_tb.vhd : (43, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0137: mult16_tb.vhd : (46, 45): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -reorder -dbg -e 100 -work mult16 -2008  $dsn/src/mult16.vhd $dsn/src/mult16_tb.vhd
+# Compile Entity "mult16"
+# Compile Architecture "behavioral" of Entity "mult16"
+# Compile Entity "mult16_tb"
+# Compile Architecture "test" of Entity "mult16_tb"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => mult16_tb
+# Compile Architecture "test" of Entity "mult16_tb"
+# Error: COMP96_0071: mult16_tb.vhd : (43, 20): Operator "=" is not defined for such operands.
+# Error: COMP96_0077: mult16_tb.vhd : (43, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0137: mult16_tb.vhd : (46, 45): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -reorder -dbg -e 100 -work mult16 -2008  $dsn/src/mult16.vhd $dsn/src/mult16_tb.vhd
+# Compile Entity "mult16"
+# Compile Architecture "behavioral" of Entity "mult16"
+# Compile Entity "mult16_tb"
+# Compile Architecture "test" of Entity "mult16_tb"
+# Top-level unit(s) detected:
+# Entity => mult16
+# Error: COMP96_0049: mult16_tb.vhd : (43, 19): Syntax error in expression.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -reorder -dbg -e 100 -work mult16 -2008  $dsn/src/mult16.vhd $dsn/src/mult16_tb.vhd
+# Compile Entity "mult16"
+# Compile Architecture "behavioral" of Entity "mult16"
+# Compile Entity "mult16_tb"
+# Compile Architecture "test" of Entity "mult16_tb"
+# Top-level unit(s) detected:
+# Entity => mult16
+# Error: COMP96_0049: mult16_tb.vhd : (43, 19): Syntax error in expression.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -reorder -dbg -e 100 -work mult16 -2008  $dsn/src/mult16.vhd $dsn/src/mult16_tb.vhd
+# Compile Entity "mult16"
+# Compile Architecture "behavioral" of Entity "mult16"
+# Compile Entity "mult16_tb"
+# Compile Architecture "test" of Entity "mult16_tb"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => mult16_tb
+# Compile Architecture "test" of Entity "mult16_tb"
+# Error: COMP96_0149: mult16_tb.vhd : (43, 38): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0754: mult16_tb.vhd : (43, 20): Cannot find the operator denoted with the ""="[STD_ULOGIC_VECTOR, INTEGER return BOOLEAN]" signature.
+# Error: COMP96_0077: mult16_tb.vhd : (43, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0137: mult16_tb.vhd : (46, 45): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  15.0 [ms]
+asim -O5 -L altera -L altera_lnsim -L altera_lnsim_ver -L altera_mf -L altera_mf_ver -L altera_ver -L cyclonev +access +r +m+mult16_tb mult16_tb test
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -dbg -e 100 -work mult16 -2008  $dsn/src/mult16_tb.vhd
+# Compile Entity "mult16_tb"
+# Compile Architecture "test" of Entity "mult16_tb"
+# Error: COMP96_0149: mult16_tb.vhd : (43, 56): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0754: mult16_tb.vhd : (43, 38): Cannot find the operator denoted with the ""="[STD_ULOGIC_VECTOR, INTEGER return BOOLEAN]" signature.
+# Error: COMP96_0077: mult16_tb.vhd : (43, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0137: mult16_tb.vhd : (46, 45): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6596 kB (elbread=427 elab2=6029 kernel=140 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\ulate\Desktop\443\midterm_project\mult16\src\wave.asdb
+#  1:06 PM, Sunday, October 26, 2025
+#  Simulation has been initialized
+# Warning: Cannot set breakpoint. No executable statement found or debugging data is unavailable. Compile source files with the -dbg argument of the acom/alog command or check the Enable Debug option in the Compilation | VHDL/Verilog category of the Design Settings dialog box.
+# Warning: Cannot set breakpoint. No executable statement found or debugging data is unavailable. Compile source files with the -dbg argument of the acom/alog command or check the Enable Debug option in the Compilation | VHDL/Verilog category of the Design Settings dialog box.
+# Warning: Cannot set breakpoint. No executable statement found or debugging data is unavailable. Compile source files with the -dbg argument of the acom/alog command or check the Enable Debug option in the Compilation | VHDL/Verilog category of the Design Settings dialog box.
+# Warning: Cannot set breakpoint. No executable statement found or debugging data is unavailable. Compile source files with the -dbg argument of the acom/alog command or check the Enable Debug option in the Compilation | VHDL/Verilog category of the Design Settings dialog box.
+# Warning: Cannot set breakpoint. No executable statement found or debugging data is unavailable. Compile source files with the -dbg argument of the acom/alog command or check the Enable Debug option in the Compilation | VHDL/Verilog category of the Design Settings dialog box.
+acom -reorder -dbg -e 100 -work mult16 -2008  $dsn/src/mult16.vhd $dsn/src/mult16_tb.vhd
+# Compile Entity "mult16"
+# Compile Architecture "behavioral" of Entity "mult16"
+# Compile Entity "mult16_tb"
+# Compile Architecture "test" of Entity "mult16_tb"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => mult16_tb
+# Compile Architecture "test" of Entity "mult16_tb"
+# Error: COMP96_0149: mult16_tb.vhd : (43, 56): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0754: mult16_tb.vhd : (43, 38): Cannot find the operator denoted with the ""="[STD_ULOGIC_VECTOR, INTEGER return BOOLEAN]" signature.
+# Error: COMP96_0077: mult16_tb.vhd : (43, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0137: mult16_tb.vhd : (46, 45): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  15.0 [ms]
+endsim
+# VSIM: Simulation has finished.
+acom -reorder -dbg -e 100 -work mult16 -2008  $dsn/src/mult16.vhd $dsn/src/mult16_tb.vhd
+# Compile Entity "mult16"
+# Compile Architecture "behavioral" of Entity "mult16"
+# Compile Entity "mult16_tb"
+# Compile Architecture "test" of Entity "mult16_tb"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => mult16_tb
+# Compile Architecture "test" of Entity "mult16_tb"
+# Error: COMP96_0149: mult16_tb.vhd : (43, 56): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0754: mult16_tb.vhd : (43, 38): Cannot find the operator denoted with the ""="[STD_ULOGIC_VECTOR, INTEGER return BOOLEAN]" signature.
+# Error: COMP96_0077: mult16_tb.vhd : (43, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0137: mult16_tb.vhd : (46, 45): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -reorder -dbg -e 100 -work mult16 -2008  $dsn/src/mult16.vhd $dsn/src/mult16_tb.vhd
+# Compile Entity "mult16"
+# Compile Architecture "behavioral" of Entity "mult16"
+# Compile Entity "mult16_tb"
+# Compile Architecture "test" of Entity "mult16_tb"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => mult16_tb
+# Compile Architecture "test" of Entity "mult16_tb"
+# Error: COMP96_0093: mult16_tb.vhd : (43, 37): The type of the actual in the subprogram call does not match the "INTEGER" type of the "ARG" parameter.
+# Error: COMP96_0149: mult16_tb.vhd : (43, 67): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0754: mult16_tb.vhd : (43, 49): Cannot find the operator denoted with the ""="[STD_ULOGIC_VECTOR, INTEGER return BOOLEAN]" signature.
+# Error: COMP96_0077: mult16_tb.vhd : (43, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0137: mult16_tb.vhd : (46, 45): This parameter is not compatible with the parameter allowed for attribute 'IMAGE.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -reorder -dbg -e 100 -work mult16 -2008  $dsn/src/mult16.vhd $dsn/src/mult16_tb.vhd
+# Compile Entity "mult16"
+# Compile Architecture "behavioral" of Entity "mult16"
+# Compile Entity "mult16_tb"
+# Compile Architecture "test" of Entity "mult16_tb"
+# Top-level unit(s) detected:
+# Entity => mult16_tb
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -reorder -dbg -e 100 -work mult16 -2008  $dsn/src/mult16.vhd $dsn/src/mult16_tb.vhd
+# Compile Entity "mult16"
+# Compile Architecture "behavioral" of Entity "mult16"
+# Compile Entity "mult16_tb"
+# Compile Architecture "test" of Entity "mult16_tb"
+# Top-level unit(s) detected:
+# Entity => mult16_tb
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim -O5 -L altera -L altera_lnsim -L altera_lnsim_ver -L altera_mf -L altera_mf_ver -L altera_ver -L cyclonev +access +r +m+mult16_tb mult16_tb test
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6600 kB (elbread=427 elab2=6032 kernel=141 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\ulate\Desktop\443\midterm_pr

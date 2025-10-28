@@ -1,31 +1,13 @@
 acom -O3 -e 100 -work alu16 -2008  $dsn/src/alu16.vhd
 # Compile Entity "alu16"
 # Compile Architecture "behavioral" of Entity "alu16"
-# Error: COMP96_0019: alu16.vhd : (43, 12): Keyword 'end' expected.
-# Error: COMP96_0019: alu16.vhd : (45, 7): Keyword 'process' expected.
-# Error: COMP96_0019: alu16.vhd : (48, 2): Keyword 'when' expected.
-# Error: COMP96_0015: alu16.vhd : (48, 2): ';' expected.
-# Error: COMP96_0015: alu16.vhd : (48, 6): ';' expected.
-# Error: COMP96_0016: alu16.vhd : (48, 13): Design unit declaration expected.
-# Error: COMP96_0019: alu16.vhd : (49, 28): Keyword 'of' expected.
-# Error: COMP96_0018: alu16.vhd : (49, 28): Identifier expected.
-# Compile failure 8 Errors 0 Warnings  Analysis time :  0.0 [ms]
+# Compile Architecture "structural" of Entity "alu16"
+# Error: COMP96_0078: alu16.vhd : (119, 21): Unknown identifier "Z_sig".
+# Error: COMP96_0133: alu16.vhd : (119, 21): Cannot find object declaration.
+# Error: COMP96_0077: alu16.vhd : (119, 21): Undefined type of expression. Expected type 'BOOLEAN'.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  47.0 [ms]
 acom -O3 -e 100 -work alu16 -2008  $dsn/src/alu16.vhd
 # Compile Entity "alu16"
 # Compile Architecture "behavioral" of Entity "alu16"
-# Error: COMP96_0015: alu16.vhd : (48, 2): ';' expected.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -O3 -e 100 -work alu16 -2008  $dsn/src/alu16.vhd
-# Compile Entity "alu16"
-# Compile Architecture "behavioral" of Entity "alu16"
-# Error: COMP96_0131: alu16.vhd : (47, 31): Illegal operand for type conversion.
-# Error: COMP96_0149: alu16.vhd : (47, 39): Explicit type conversions are allowed between closely related types only.
-# Error: COMP96_0367: alu16.vhd : (47, 8): Improper array length (1). Expected length is 16.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -O3 -e 100 -work alu16 -2008  $dsn/src/alu16.vhd
-# Compile Entity "alu16"
-# Compile Architecture "behavioral" of Entity "alu16"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-# Library Manager: Library "gates" attached.
-# Library Manager: Library "adder16" attached.
-# Design: Design "subtractor16" has been set as active.
+# Compile Architecture "structural" of Entity "alu16"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]

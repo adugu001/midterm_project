@@ -1,0 +1,1 @@
+-w -d C:/My_Designs/midterm_project/mult16/compile -s C:/My_Designs/midterm_project/library.cfg -j C:/My_Designs/midterm_project/mult16/projlib.cfg -work mult16 -reorder -O3 -e 100 -work mult16 -2002 C:/My_Designs/midterm_project/mult16/src/mult16.vhd 

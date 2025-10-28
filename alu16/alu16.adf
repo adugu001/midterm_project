@@ -9,11 +9,17 @@ compile=alu16
 alu16=.\alu16\alu16.lib
 gates=.\..\gates\gates\gates.lib
 adder16=.\..\adder16\adder16\adder16.lib
+mux=.\..\mux\mux\mux.lib
+mult16=.\..\mult16\mult16\mult16.lib
+subtractor16=.\..\subtractor16\subtractor16\subtractor16.lib
 [$LibMap$]
 alu16=.
 Active_lib=
 gates=.
 adder16=.
+mux=.
+mult16=.
+subtractor16=.
 [Settings]
 FLOW_TYPE=HDL
 LANGUAGE=VHDL
@@ -76,3 +82,7 @@ DisableRangeChecks=0
 ProtectLevel=0
 IncrementalCompilation=0
 AdditionalOptions=
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=

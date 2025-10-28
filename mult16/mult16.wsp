@@ -11,16 +11,12 @@ CurrentVersion=103
 [CACHEDOC|Aldec.Project.Generic.7|.\mult16\mult16.adf|]
 Path=
 [COMPILESTATUS|.\src\mult16.vhd]
-FileTimeLow=3273881138
-FileTimeHigh=31213237
-Status=Modified
-[Gui config]
-RunFor=100 ns
-[COMPILESTATUS|.\src\mult16_tb.vhd]
-FileTimeLow=1011336417
-FileTimeHigh=31213235
+FileTimeLow=756216850
+FileTimeHigh=31213284
 Status=Compiled
 [COMPILESTATUS|.\src\mult16_tb.vhd]
 FileTimeLow=2008157117
 FileTimeHigh=31213236
 Status=Modified
+[Gui config]
+RunFor=100 ns

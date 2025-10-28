@@ -5,7 +5,7 @@ Status=Modified
 [General]
 CurrentVersion=103
 [CACHEDOC|Aldec.Project.Generic.7|.\mux\mux.adf|]
-Path=/mux8_tb
+Path=
 [COMPILESTATUS|.\src\mux8.vhd]
 FileTimeLow=1014554791
 FileTimeHigh=31213281

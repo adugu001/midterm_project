@@ -12,6 +12,7 @@ adder16=.\..\adder16\adder16\adder16.lib
 mux=.\..\mux\mux\mux.lib
 mult16=.\..\mult16\mult16\mult16.lib
 subtractor16=.\..\subtractor16\subtractor16\subtractor16.lib
+mux16=.\..\mux16\mux16\mux16.lib
 [$LibMap$]
 alu16=.
 Active_lib=
@@ -20,6 +21,7 @@ adder16=.
 mux=.
 mult16=.
 subtractor16=.
+mux16=.
 [Settings]
 FLOW_TYPE=HDL
 LANGUAGE=VHDL

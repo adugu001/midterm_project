@@ -1,9 +1,9 @@
 library ieee; 
-library mux;
+library mux16;
 library adder16;
 library subtractor16;
 library mult16;
-use mux.all;
+use mux16.all;
 use adder16.all;
 use subtractor16.all;
 use mult16.all;
@@ -94,43 +94,40 @@ begin
 	-- CAST SELECT LINES TO A VECTOR
 	sel_sig <= S2 & S1 & S0;							  
 	
-	-- GENERATE ARRAY OF MUX TO SPECIFY WHICH CALCULATION TO PROPOGATE
-	GEN_OUTPUT_MUX : for i in 0 to 15 generate
-		THE_MUX: entity mux.mux8(behavioral)		 
-        	port map(
+	-- INTANTIATE MUX. DELAY_MUX = 0
+	MUXES : entity mux16.mux16(structural)
+        port map ( 	  
 		        sel 	=> sel_sig,
-		        a0 		=> R_adder(i),
-		        a1 		=> R_mult(i),
-		        a2 		=> A(i),
-		        a3 		=> B(i),
-		        a4 		=> R_sub(i),
-		        a5 		=> '0',
-		        a6 		=> '0',
-		        a7 		=> '0',
-		        z_out 	=> R_sig(i)
-		    );
-	end generate;
+		        a0 		=> R_adder,
+		        a1 		=> R_mult,
+		        a2 		=> A,
+		        a3 		=> B,
+		        a4 		=> R_sub,
+		        a5 		=> X"0000",
+		        a6 		=> X"0000",
+		        a7 		=> X"0000",
+		        R 		=> R_sig );
 	
-	-- INSTANTIATE ADD UNIT
+	-- INSTANTIATE ADD UNIT. DELAY_ADD = 640
 	ADD_UNIT : entity adder16.adder16(structural)
         port map ( A  => A, B => B, c_in => '0', R => R_adder, c_out => cout_adder);
 	
-	-- INSTANTIATE SUB UNIT
+	-- INSTANTIATE SUB UNIT. DELAY_SUB = 650
 	SUB_UNIT : entity subtractor16.subtractor16(structural)
         port map ( A => A, B => B, R => R_sub, c_out => cout_sub);
 	
-	-- INSTANTIATE MULT UNIT
-	MUL_UNIT : entity mult16.mult16(behavioral)   --- NEED TO CHANGE TO STRUCTURAL!!!!!!!! 
+	-- INSTANTIATE MULT UNIT. DELAY_MUL = ============================TO DO
+	MUL_UNIT : entity mult16.mult16(behavioral)   --==================CHANGE TO STR
 		port map ( a_in => A, b_in => B, r_out => R_mult, overflow => OF_mult);	 
 		
-	-- OVERFLOW FLAG LOGIC 	
+	-- OVERFLOW FLAG LOGIC. V_CALC_DELAY = 3 GATE LEVELS = 30ns 	
 	V_adder <=  ((A(15) AND B(15) AND (NOT R_adder(15)) ) OR   				  -- overflow if A(15)'B(15)'R(15) + A(15)B(15)R(15)'
 				((NOT A(15)) AND (NOT B(15)) AND R_adder(15) )) after 30ns; 
 	V_sub   <=  (((NOT A(15)) AND B(15) AND R_sub(15) ) OR   				  -- overflow if A(15)'B(15)R(15)  + A(15)B(15)'R(15)' 
 				(A(15) AND (NOT B(15)) AND (NOT R_sub(15)))) after 30ns;	   
 	V_mult <= OF_mult;	  
 	
-	-- LOGIC TO SELECT **WHICH** OVERFLOW FLAG
+	-- LOGIC TO SELECT **WHICH** OVERFLOW FLAG. V_SEL_DELAY = 3 GATE LEVELS = 30ns
 	V_flag <= 	(( V_adder AND (not S2) AND (NOT S1) AND (NOT S0)) OR    --S2'S1'S0' == ADDITION
 				( V_mult  AND (not S2) AND (NOT S1) AND S0) OR 		     --S2'S1'S0  == MULTIPLICATION
 				( V_flag  AND S2 AND (NOT S1) AND (NOT S0))) after 30ns; --S2 S1'S0' == SUBTRACTION

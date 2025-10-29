@@ -13,7 +13,7 @@ Path=
 [COMPILESTATUS|.\src\mult16.vhd]
 FileTimeLow=756216850
 FileTimeHigh=31213284
-Status=Compiled
+Status=Modified
 [COMPILESTATUS|.\src\mult16_tb.vhd]
 FileTimeLow=2008157117
 FileTimeHigh=31213236

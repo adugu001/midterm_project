@@ -87,7 +87,7 @@ begin
 					"cout_sig " & STD_LOGIC'IMAGE(cout_beh);
 			
 			assert (R_str = Test_cases(i).Sum and cout_str = Test_cases(i).Cout) 	
-			report 	"behavioral fail" & LF &
+			report 	"Structural fail" & LF &
 					"A        " & INTEGER'IMAGE(TO_INTEGER(SIGNED(Test_cases(i).A_in))) & LF &
 					"A_sig    " & INTEGER'IMAGE(TO_INTEGER(SIGNED(A_sig))) & LF &
 					"B        " & INTEGER'IMAGE(TO_INTEGER(SIGNED(Test_cases(i).B_in))) & LF &

@@ -1,4 +1,4 @@
-Active-HDL 15.0.260.9131 2025-10-27 19:30:59
+Active-HDL 15.0.260.9131 2025-10-29 18:54:42
 
 Elaboration top modules:
 Architecture                  behavioral(mux8_tb)
@@ -7,8 +7,10 @@ Architecture                  behavioral(mux8_tb)
 -------------------------------------------------------------------------------------------
 Entity   | Architecture | Library | Info | Compiler Version          | Compilation Options
 -------------------------------------------------------------------------------------------
-mux8_tb  | behavioral   | mux     |      | 15.0.260.9131 (Windows64) | -O3 -2008
-mux8     | behavioral   | mux     |      | 15.0.260.9131 (Windows64) | -O3 -2008
+mux8_tb  | behavioral   | mux16   |      | 15.0.260.9131 (Windows64) | -O3 -2008
+mux16    | behavioral   | mux16   |      | 15.0.260.9131 (Windows64) | -O3 -2008
+mux16    | structural   | mux16   |      | 15.0.260.9131 (Windows64) | -O3 -2008
+mux      | behavioral   | mux16   |      | 15.0.260.9131 (Windows64) | -O3 -2008
 -------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------
@@ -24,6 +26,6 @@ NUMERIC_STD             | ieee    |      | 15.0.260.9131 (Windows64) |  -2008
 Library                 | Comment
 -------------------------------------------------------------------------------------------
 ieee                    | Standard IEEE packages library
-mux                     | None
+mux16                   | None
 std                     | Standard VHDL library
 -------------------------------------------------------------------------------------------

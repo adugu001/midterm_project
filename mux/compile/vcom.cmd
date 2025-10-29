@@ -1,1 +1,0 @@
--w -d C:/My_Designs/midterm_project/mux/compile -s C:/My_Designs/midterm_project/library.cfg -j C:/My_Designs/midterm_project/mux/projlib.cfg -work mux -O3 -e 100 -work mux -2008 C:/My_Designs/midterm_project/mux/src/mux8_tb.vhd 

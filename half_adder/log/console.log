@@ -1,74 +1,12 @@
-acom -O3 -e 100 -work half_adder -2002  $dsn/src/half_adder_tb.vhd
+acom -O3 -e 100 -work half_adder -2002  $dsn/src/half_adder.vhd $dsn/src/half_adder_tb.vhd
+# Compile Entity "halfAdder"
+# Compile Architecture "behavioral" of Entity "halfAdder"
+# Compile Architecture "structural" of Entity "halfAdder"
 # Compile Entity "full_adder_tb"
 # Compile Architecture "behavioral" of Entity "full_adder_tb"
-# Error: COMP96_0078: half_adder_tb.vhd : (30, 48): Unknown identifier "abc_var".
-# Error: COMP96_0133: half_adder_tb.vhd : (30, 48): Cannot find object declaration.
-# Error: COMP96_0104: half_adder_tb.vhd : (30, 48): Undefined type of expression.
-# Error: COMP96_0078: half_adder_tb.vhd : (31, 17): Unknown identifier "abc_var".
-# Error: COMP96_0078: half_adder_tb.vhd : (31, 32): Unknown identifier "abc_var".
-# Error: COMP96_0133: half_adder_tb.vhd : (31, 32): Cannot find object declaration.
-# Error: COMP96_0289: half_adder_tb.vhd : (31, 32): Prefix of index must be an array.
-# Error: COMP96_0133: half_adder_tb.vhd : (31, 17): Cannot find object declaration.
-# Error: COMP96_0289: half_adder_tb.vhd : (31, 17): Prefix of index must be an array.
-# Error: COMP96_0077: half_adder_tb.vhd : (31, 17): Undefined type of expression. Expected type 'STD_ULOGIC'.
-# Error: COMP96_0078: half_adder_tb.vhd : (32, 17): Unknown identifier "abc_var".
-# Error: COMP96_0078: half_adder_tb.vhd : (32, 32): Unknown identifier "abc_var".
-# Error: COMP96_0133: half_adder_tb.vhd : (32, 32): Cannot find object declaration.
-# Error: COMP96_0289: half_adder_tb.vhd : (32, 32): Prefix of index must be an array.
-# Error: COMP96_0133: half_adder_tb.vhd : (32, 17): Cannot find object declaration.
-# Error: COMP96_0289: half_adder_tb.vhd : (32, 17): Prefix of index must be an array.
-# Error: COMP96_0077: half_adder_tb.vhd : (32, 17): Undefined type of expression. Expected type 'STD_ULOGIC'.
-# Error: COMP96_0078: half_adder_tb.vhd : (34, 11): Unknown identifier "abc_var".
-# Error: COMP96_0133: half_adder_tb.vhd : (34, 11): Cannot find object declaration.
-# Error: COMP96_0289: half_adder_tb.vhd : (34, 11): Prefix of index must be an array.
-# Error: COMP96_0077: half_adder_tb.vhd : (34, 11): Undefined type of expression. Expected type 'STD_ULOGIC'.
-# Error: COMP96_0078: half_adder_tb.vhd : (35, 11): Unknown identifier "abc_var".
-# Error: COMP96_0133: half_adder_tb.vhd : (35, 11): Cannot find object declaration.
-# Error: COMP96_0289: half_adder_tb.vhd : (35, 11): Prefix of index must be an array.
-# Error: COMP96_0077: half_adder_tb.vhd : (35, 11): Undefined type of expression. Expected type 'STD_ULOGIC'.
-# Compile failure 25 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work half_adder -2002  $dsn/src/half_adder_tb.vhd
-# Compile Entity "full_adder_tb"
-# Compile Architecture "behavioral" of Entity "full_adder_tb"
-# Error: COMP96_0078: half_adder_tb.vhd : (31, 17): Unknown identifier "abc_var".
-# Error: COMP96_0078: half_adder_tb.vhd : (31, 32): Unknown identifier "abc_var".
-# Error: COMP96_0133: half_adder_tb.vhd : (31, 32): Cannot find object declaration.
-# Error: COMP96_0289: half_adder_tb.vhd : (31, 32): Prefix of index must be an array.
-# Error: COMP96_0133: half_adder_tb.vhd : (31, 17): Cannot find object declaration.
-# Error: COMP96_0289: half_adder_tb.vhd : (31, 17): Prefix of index must be an array.
-# Error: COMP96_0077: half_adder_tb.vhd : (31, 17): Undefined type of expression. Expected type 'STD_ULOGIC'.
-# Error: COMP96_0078: half_adder_tb.vhd : (32, 17): Unknown identifier "abc_var".
-# Error: COMP96_0078: half_adder_tb.vhd : (32, 32): Unknown identifier "abc_var".
-# Error: COMP96_0133: half_adder_tb.vhd : (32, 32): Cannot find object declaration.
-# Error: COMP96_0289: half_adder_tb.vhd : (32, 32): Prefix of index must be an array.
-# Error: COMP96_0133: half_adder_tb.vhd : (32, 17): Cannot find object declaration.
-# Error: COMP96_0289: half_adder_tb.vhd : (32, 17): Prefix of index must be an array.
-# Error: COMP96_0077: half_adder_tb.vhd : (32, 17): Undefined type of expression. Expected type 'STD_ULOGIC'.
-# Error: COMP96_0078: half_adder_tb.vhd : (34, 11): Unknown identifier "abc_var".
-# Error: COMP96_0133: half_adder_tb.vhd : (34, 11): Cannot find object declaration.
-# Error: COMP96_0289: half_adder_tb.vhd : (34, 11): Prefix of index must be an array.
-# Error: COMP96_0077: half_adder_tb.vhd : (34, 11): Undefined type of expression. Expected type 'STD_ULOGIC'.
-# Error: COMP96_0078: half_adder_tb.vhd : (35, 11): Unknown identifier "abc_var".
-# Error: COMP96_0133: half_adder_tb.vhd : (35, 11): Cannot find object declaration.
-# Error: COMP96_0289: half_adder_tb.vhd : (35, 11): Prefix of index must be an array.
-# Error: COMP96_0077: half_adder_tb.vhd : (35, 11): Undefined type of expression. Expected type 'STD_ULOGIC'.
-# Compile failure 22 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work half_adder -2002  $dsn/src/half_adder_tb.vhd
-# Compile Entity "full_adder_tb"
-# Compile Architecture "behavioral" of Entity "full_adder_tb"
-# Error: COMP96_0078: half_adder_tb.vhd : (34, 11): Unknown identifier "abc_var".
-# Error: COMP96_0133: half_adder_tb.vhd : (34, 11): Cannot find object declaration.
-# Error: COMP96_0289: half_adder_tb.vhd : (34, 11): Prefix of index must be an array.
-# Error: COMP96_0077: half_adder_tb.vhd : (34, 11): Undefined type of expression. Expected type 'STD_ULOGIC'.
-# Error: COMP96_0078: half_adder_tb.vhd : (35, 11): Unknown identifier "abc_var".
-# Error: COMP96_0133: half_adder_tb.vhd : (35, 11): Cannot find object declaration.
-# Error: COMP96_0289: half_adder_tb.vhd : (35, 11): Prefix of index must be an array.
-# Error: COMP96_0077: half_adder_tb.vhd : (35, 11): Undefined type of expression. Expected type 'STD_ULOGIC'.
-# Compile failure 8 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work half_adder -2002  $dsn/src/half_adder_tb.vhd
-# Compile Entity "full_adder_tb"
-# Compile Architecture "behavioral" of Entity "full_adder_tb"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
 asim -O5 +access +r +m+full_adder_tb full_adder_tb behavioral
@@ -92,14 +30,9 @@ asim -O5 +access +r +m+full_adder_tb full_adder_tb behavioral
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: Kernel process initialization done.
 # Allocation: Simulator allocated 6467 kB (elbread=427 elab2=5901 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location C:\My_Designs\midterm_project\half_adder\src\wave.asdb
-#  3:53 PM, Wednesday, October 22, 2025
+# KERNEL: ASDB file was created in location C:\Aldec\My_Designs\midterm_project\half_adder\src\wave.asdb
+#  4:28 PM, Wednesday, October 29, 2025
 #  Simulation has been initialized
-# VSIM: 6 object(s) traced.
-# Waveform file 'untitled.awc' connected to 'C:/My_Designs/midterm_project/half_adder/src/wave.asdb'.
 run
 # KERNEL: Simulation has finished. There are no more test vectors to simulate.
-# Waveform file 'C:/My_Designs/midterm_project/half_adder/src/half_adder_tb_wf.awc' connected to 'C:/My_Designs/midterm_project/half_adder/src/half_adder_tb_wf.asdb'.
-# Adding file C:\My_Designs\midterm_project\half_adder\src\half_adder_tb_wf.asdb ... Done
-# Adding file C:\My_Designs\midterm_project\half_adder\src\half_adder_tb_wf.awc ... Done
-# Design: Design "adder16" has been set as active.
+# Design: Design "full_adder" has been set as active.

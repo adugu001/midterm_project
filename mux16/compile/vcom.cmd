@@ -1,0 +1,1 @@
+-w -d C:/Aldec/My_Designs/midterm_project/mux16/compile -s C:/Aldec/My_Designs/midterm_project/library.cfg -j C:/Aldec/My_Designs/midterm_project/mux16/projlib.cfg -work mux16 -O3 -e 100 -work mux16 -2008 C:/Aldec/My_Designs/midterm_project/mux16/src/mux16_tb.vhd 

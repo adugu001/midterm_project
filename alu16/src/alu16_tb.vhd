@@ -1,13 +1,13 @@
-library IEEE;
+ library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.NUMERIC_STD.all;
 
 -- TODO Flag tests for multiplier
 
-entity alu16_tb is
-end entity alu16_tb;
+entity mux16_tb is
+end entity mux16_tb;
 
-architecture behavioral of alu16_tb is
+architecture behavioral of mux16_tb is
 --CREATES TEST CASES FOR SPECIAL-CASES
 type TestCase_Record is record
     A       : STD_LOGIC_VECTOR(15 downto 0);

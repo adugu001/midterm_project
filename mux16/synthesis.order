@@ -1,1 +1,3 @@
 i<>.\src\mux16.vhd
+i<>.\src\mux16_tb.vhd
+i<>.\src\mux.vhd

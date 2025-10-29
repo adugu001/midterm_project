@@ -1,4 +1,4 @@
-Active-HDL 15.0.260.9131 2025-10-26 21:19:44
+Active-HDL 15.0.260.9131 2025-10-29 16:31:15
 
 Elaboration top modules:
 Architecture                  behavioral(subtractor16_tb)
@@ -39,3 +39,9 @@ ieee                           | Standard IEEE packages library
 std                            | Standard VHDL library
 subtractor16                   | None
 -------------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+subtractor16_tb subtractor16_tb behavioral
+
+
+The performance of simulation is reduced. Version EDU Edition

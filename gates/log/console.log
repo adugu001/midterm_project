@@ -1,3 +1,27 @@
+acom -O3 -e 100 -work gates -2002  $dsn/src/and2.vhd $dsn/src/buf1.vhd $dsn/src/nand2.vhd $dsn/src/nor2.vhd $dsn/src/not1.vhd $dsn/src/or2.vhd $dsn/src/xor2.vhd $dsn/src/xnor2.vhd $dsn/src/gates_tb.vhd
+# Compile Entity "and2"
+# Compile Architecture "rtl" of Entity "and2"
+# Compile Entity "buf1"
+# Compile Architecture "rtl" of Entity "buf1"
+# Compile Entity "nand2"
+# Compile Architecture "rtl" of Entity "nand2"
+# Compile Entity "nor2"
+# Compile Architecture "rtl" of Entity "nor2"
+# Compile Entity "not1"
+# Compile Architecture "rtl" of Entity "not1"
+# Compile Entity "or2"
+# Compile Architecture "rtl" of Entity "or2"
+# Compile Entity "xor2"
+# Compile Architecture "rtl" of Entity "xor2"
+# Compile Entity "xnor2"
+# Compile Architecture "rtl" of Entity "xnor2"
+# Compile Entity "gates_tb"
+# Compile Architecture "behavioral" of Entity "gates_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
 asim -O5 +access +r +m+gates_tb gates_tb behavioral
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
@@ -19,31 +43,9 @@ asim -O5 +access +r +m+gates_tb gates_tb behavioral
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: Kernel process initialization done.
 # Allocation: Simulator allocated 6507 kB (elbread=427 elab2=5940 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location C:\My_Designs\midterm_project\gates\src\wave.asdb
-#  8:55 PM, Sunday, October 26, 2025
+# KERNEL: ASDB file was created in location C:\Aldec\My_Designs\midterm_project\gates\src\wave.asdb
+#  4:27 PM, Wednesday, October 29, 2025
 #  Simulation has been initialized
-acom -O3 -e 100 -work gates -2002  $dsn/src/and2.vhd $dsn/src/buf1.vhd $dsn/src/nand2.vhd $dsn/src/nor2.vhd $dsn/src/not1.vhd $dsn/src/or2.vhd $dsn/src/xor2.vhd $dsn/src/xnor2.vhd $dsn/src/gates_tb.vhd
-# Compile Entity "and2"
-# Compile Architecture "rtl" of Entity "and2"
-# Compile Entity "buf1"
-# Compile Architecture "rtl" of Entity "buf1"
-# Compile Entity "nand2"
-# Compile Architecture "rtl" of Entity "nand2"
-# Compile Entity "nor2"
-# Compile Architecture "rtl" of Entity "nor2"
-# Compile Entity "not1"
-# Compile Architecture "rtl" of Entity "not1"
-# Compile Entity "or2"
-# Compile Architecture "rtl" of Entity "or2"
-# Compile Entity "xor2"
-# Compile Architecture "rtl" of Entity "xor2"
-# Compile Entity "xnor2"
-# Compile Architecture "rtl" of Entity "xnor2"
-# Compile Entity "gates_tb"
-# Compile Architecture "behavioral" of Entity "gates_tb"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
 run
 # KERNEL: Simulation has finished. There are no more test vectors to simulate.
-# Design: Design "subtractor16" has been set as active.
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
+# Design: Design "half_adder" has been set as active.

@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity mux8 is
+entity mux is
     port (
         sel : in  std_logic_vector(2 downto 0);
         a0 : in std_logic;
@@ -15,9 +15,9 @@ entity mux8 is
         a7 : in std_logic;
         z_out : out std_logic
     );
-end mux8;
+end mux;
 
-architecture behavioral of mux8 is
+architecture behavioral of mux is
 begin
 	BEH_PROCESS : process(all)
 	begin

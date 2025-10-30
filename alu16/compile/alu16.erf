@@ -1,0 +1,7 @@
+ERROR COMP96_0059: "Library "mux" not found." "C:/Aldec/My_Designs/midterm_project/alu16/src/alu16.vhd" 2 1
+ERROR COMP96_0078: "Unknown identifier "mux"." "C:/Aldec/My_Designs/midterm_project/alu16/src/alu16.vhd" 6 5
+ERROR COMP96_0270: ""mux" is not a library nor a package." "C:/Aldec/My_Designs/midterm_project/alu16/src/alu16.vhd" 98 19
+ERROR COMP96_0055: "Cannot find context item "mux.mux8"." "C:/Aldec/My_Designs/midterm_project/alu16/src/alu16.vhd" 98 19
+ERROR COMP96_0078: "Unknown identifier "ZEROS_16"." "C:/Aldec/My_Designs/midterm_project/alu16/src/alu16.vhd" 131 32
+ERROR COMP96_0133: "Cannot find object declaration." "C:/Aldec/My_Designs/midterm_project/alu16/src/alu16.vhd" 131 32
+ERROR COMP96_0077: "Undefined type of expression. Expected type 'BOOLEAN'." "C:/Aldec/My_Designs/midterm_project/alu16/src/alu16.vhd" 131 24

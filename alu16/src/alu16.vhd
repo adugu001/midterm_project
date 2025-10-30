@@ -80,7 +80,9 @@ begin
 	    status <= v_flag & z_flag & n_flag;
 		R <= r_var(15 downto 0);
 	end process;
-end architecture behavioral;	
+end architecture behavioral;
+
+
 architecture structural of alu16 is	
 signal R_adder, R_mult, R_sub, R_sig : STD_LOGIC_VECTOR(15 downto 0); 
 signal sel_sig : STD_LOGIC_VECTOR(2 downto 0);	 

@@ -1,1 +1,1 @@
--w -d C:/Aldec/My_Designs/midterm_project/alu16/compile -s C:/Aldec/My_Designs/midterm_project/library.cfg -j C:/Aldec/My_Designs/midterm_project/alu16/projlib.cfg -work alu16 -O3 -e 100 -work alu16 -2008 C:/Aldec/My_Designs/midterm_project/alu16/src/alu16.vhd 
+-w -d C:/Aldec/My_Designs/midterm_project/alu16/compile -s C:/Aldec/My_Designs/midterm_project/library.cfg -j C:/Aldec/My_Designs/midterm_project/alu16/projlib.cfg -work alu16 -O3 -e 100 -work alu16 -2008 C:/Aldec/My_Designs/midterm_project/alu16/src/alu16_tb.vhd 

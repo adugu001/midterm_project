@@ -1,9 +1,9 @@
 library ieee; 
-library mux;
+library mux16;
 library adder16;
 library subtractor16;
 library mult16;
-use mux.all;
+use mux16.all;
 use adder16.all;
 use subtractor16.all;
 use mult16.all;
@@ -86,53 +86,54 @@ end architecture behavioral;
 architecture structural of alu16 is	
 signal R_adder, R_mult, R_sub, R_sig : STD_LOGIC_VECTOR(15 downto 0); 
 signal sel_sig : STD_LOGIC_VECTOR(2 downto 0);	 
-signal cout_adder, cout_sub, OF_mult : STD_LOGIC;
+signal cout_adder, cout_sub : STD_LOGIC;
 signal V_adder, V_sub, V_mult : STD_LOGIC;
 signal V_flag, Z_flag, N_flag: STD_LOGIC;
-begin	   
-	-- CAST SELECT LINES TO A VECTOR
+
+
+begin
+	-- 1. INSTANTIATE ARITHMETIC SUB-UNITS.
+	add_unit : entity adder16.adder16(structural)
+        port map ( A  => A, B => B, c_in => '0', R => R_adder, c_out => cout_adder);
+	sub_unit : entity subtractor16.subtractor16(structural)
+        port map ( A  => A, B => B, R => R_sub, c_out => cout_sub);
+	mul_unit : entity mult16.mult16(behavioral)
+        port map ( a_in => A, b_in => B, r_out => R_mult, overflow => V_mult);
+		 
+	-- 2. CAST SELECT LINES TO A VECTOR
 	sel_sig <= S2 & S1 & S0;							  
 	
-	-- GENERATE ARRAY OF MUX TO SPECIFY WHICH CALCULATION TO PROPOGATE
-	GEN_OUTPUT_MUX : for i in 0 to 15 generate
-		THE_MUX: entity mux.mux8(behavioral)		 
-        	port map(
-		        sel 	=> sel_sig,
-		        a0 		=> R_adder(i),
-		        a1 		=> R_mult(i),
-		        a2 		=> A(i),
-		        a3 		=> B(i),
-		        a4 		=> R_sub(i),
-		        a5 		=> '0',
-		        a6 		=> '0',
-		        a7 		=> '0',
-		        z_out 	=> R_sig(i)
-		    );
-	end generate;
+	-- 3. MULTIPLEX WHICH RESULT TO PROPOGATE
+	OUTPUT_MUX: entity mux16.mux16(behavioral)		 
+    	port map(
+	        sel 	=> sel_sig,
+	        a0 		=> R_adder,
+	        a1 		=> R_mult,
+	        a2 		=> A,
+	        a3 		=> B,
+	        a4 		=> R_sub,
+	        a5 		=> X"0000",
+	        a6 		=> X"0000",
+	        a7 		=> X"0000",
+	        R 	=> R_sig
+	    );	 
+		
+    -- 4. CALCULATE OVERFLOW FLAG (V)
+    -- 		4.A - Calculate overflow for each operation that can have one. (multiplier does its own)
+    V_adder <= '1' when A(15)&B(15)&R_adder(15) = "110" or A(15)&B(15)&R_adder(15) = "001" else '0';
+    V_sub   <= '1' when A(15)&B(15)&R_sub(15) = "011"  or  A(15)&B(15)&R_sub(15) = "100" else '0';   
+
+    -- 		4.B -  multiplex the correct overflow flag based on sel_sig
+	V_MUX: entity mux16.mux(behavioral)		 
+    	port map(sel => sel_sig, a0	=> V_adder, a1 => V_mult, a2 => '0', a3 => '0', a4 => V_sub, a5 => '0', a6 => '0', a7 => '0', z_out => V_flag);
+
+    -- 5. ZERO FLAG (Z).  Z is '1' if the final result R_sig is all zeros
+    Z_flag <= '1' when R_sig = X"0000" else '0';
+		
+    -- 6. NEGATIVE FLAG (N).  N is the most significant bit of the final result
+    N_flag <= R_sig(15); 
 	
-    -- 1. OVERFLOW FLAG (V)
-    -- Calculate overflow for each operation that can have one
-    V_adder <= (A(15) and B(15) and (not R_adder(15))) or
-               ((not A(15)) and (not B(15)) and R_adder(15)); -- No delay needed here, let gates propagate
-    
-    V_sub <= ((not A(15)) and B(15) and R_sub(15)) or
-             (A(15) and (not B(15)) and (not R_sub(15)));
-    
-    V_mult <= OF_mult;
-    -- Select the correct overflow flag based on sel_sig
-    -- This is a multiplexer for the V_flag.
-    V_flag <= (V_adder and (not S2) and (not S1) and (not S0)) or -- "000" = ADD
-              (V_mult and (not S2) and (not S1) and S0) or     -- "001" = MULT
-              (V_sub and S2 and (not S1) and (not S0)) after 30ns;     -- "100" = SUB
-    -- All other combinations result in V_flag = '0', which is correct.
-    -- *** This line was the main error in your code. ***
-    -- 2. ZERO FLAG (Z)
-    -- Z is '1' if the final result R_sig is all zeros
-    Z_flag <= '1' when R_sig = ZEROS_16 else '0';
-    -- 3. NEGATIVE FLAG (N)
-    -- N is the most significant bit of the final result
-    N_flag <= R_sig(15);
-    -- ASSIGN FINAL OUTPUTS
+    -- 7. ASSIGN FINAL OUTPUTS
     R      <= R_sig;
     status <= V_flag & Z_flag & N_flag;
 	

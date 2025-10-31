@@ -87,6 +87,6 @@ ProtectLevel=0
 IncrementalCompilation=0
 AdditionalOptions=
 [HierarchyViewer]
-HierarchyInformation=
+HierarchyInformation=alu16_tb|behavioral|0
 ShowHide=ShowTopLevel
 Selected=

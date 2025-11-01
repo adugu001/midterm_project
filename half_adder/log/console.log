@@ -1,38 +1,56 @@
-acom -O3 -e 100 -work half_adder -2002  $dsn/src/half_adder.vhd $dsn/src/half_adder_tb.vhd
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: Architecture 'structural' of entity 'fulladder' not found in library 'half_adder'.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# Waveform file 'untitled.awc' connected to 'C:/Users/ulate/Desktop/new/midterm_project/full_adder/src/full_adder_tb_wf.asdb'.
+acom -reorder -dbg -e 100 -work half_adder -2008  $dsn/src/half_adder.vhd $dsn/src/half_adder_tb.vhd
 # Compile Entity "halfAdder"
 # Compile Architecture "behavioral" of Entity "halfAdder"
 # Compile Architecture "structural" of Entity "halfAdder"
 # Compile Entity "full_adder_tb"
 # Compile Architecture "behavioral" of Entity "full_adder_tb"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# Top-level unit(s) detected:
+# Entity => full_adder_tb
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: ELBREAD_0080 half_adder.vhd (24): Design unit rtl:xor2 instantiated in half_adder.halfAdder not found in searched libraries: gates, altera, altera_lnsim, altera_lnsim_ver, altera_mf, altera_mf_ver, altera_ver, cyclonev, half_adder.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# Waveform file 'untitled.awc' connected to 'C:/Users/ulate/Desktop/new/midterm_project/half_adder/src/half_adder_tb_wf.asdb'.
+# Waveform file 'untitled.awc' connected to 'C:/Users/ulate/Desktop/new/midterm_project/full_adder/src/full_adder_tb_wf.asdb'.
+acom -reorder -dbg -e 100 -work half_adder -2008  $dsn/src/half_adder.vhd $dsn/src/half_adder_tb.vhd
+# Compile Entity "halfAdder"
+# Compile Architecture "behavioral" of Entity "halfAdder"
+# Compile Architecture "structural" of Entity "halfAdder"
+# Compile Entity "full_adder_tb"
+# Compile Architecture "behavioral" of Entity "full_adder_tb"
+# Top-level unit(s) detected:
+# Entity => full_adder_tb
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: ELBREAD_0080 half_adder.vhd (24): Design unit rtl:xor2 instantiated in half_adder.halfAdder not found in searched libraries: gates, altera, altera_lnsim, altera_lnsim_ver, altera_mf, altera_mf_ver, altera_ver, cyclonev, half_adder.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+acom -dbg -e 100 -work half_adder -2008  $dsn/src/half_adder.vhd $dsn/src/half_adder_tb.vhd
+# Compile Entity "halfAdder"
+# Compile Architecture "behavioral" of Entity "halfAdder"
+# Compile Architecture "structural" of Entity "halfAdder"
+# Compile Entity "full_adder_tb"
+# Compile Architecture "behavioral" of Entity "full_adder_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work half_adder -2008  $dsn/src/half_adder.vhd
+# Compile Entity "halfAdder"
+# Compile Architecture "behavioral" of Entity "halfAdder"
+# Compile Architecture "structural" of Entity "halfAdder"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work half_adder -2008  $dsn/src/half_adder.vhd $dsn/src/half_adder_tb.vhd
+# Compile Entity "halfAdder"
+# Compile Architecture "behavioral" of Entity "halfAdder"
+# Compile Architecture "structural" of Entity "halfAdder"
+# Compile Entity "full_adder_tb"
+# Compile Architecture "behavioral" of Entity "full_adder_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# Waveform file 'untitled.awc' connected to 'C:/Users/ulate/Desktop/new/midterm_project/full_adder/src/full_adder_tb_wf.asdb'.
+# Design: Design "adder16" has been set as active.
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+full_adder_tb full_adder_tb behavioral
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6467 kB (elbread=427 elab2=5901 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location C:\Aldec\My_Designs\midterm_project\half_adder\src\wave.asdb
-#  4:28 PM, Wednesday, October 29, 2025
-#  Simulation has been initialized
-run
-# KERNEL: Simulation has finished. There are no more test vectors to simulate.
-# Design: Design "full_adder" has been set as active.

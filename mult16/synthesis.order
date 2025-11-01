@@ -1,1 +1,2 @@
 i<>.\src\mult16.vhd
+i<>.\src\TestBench\mult16_TB.vhd

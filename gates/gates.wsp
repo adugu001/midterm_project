@@ -1,7 +1,7 @@
 [COMPILESTATUS|.\src\and2.vhd]
 FileTimeLow=4024282360
 FileTimeHigh=31213625
-Status=Compiled
+Status=Modified
 [COMPILESTATUS|.\src\and3.vhd]
 FileTimeLow=262058845
 FileTimeHigh=31211216
@@ -9,11 +9,11 @@ Status=Compiled
 [COMPILESTATUS|.\src\buf1.vhd]
 FileTimeLow=4024292358
 FileTimeHigh=31213625
-Status=Compiled
+Status=Modified
 [COMPILESTATUS|.\src\nand2.vhd]
 FileTimeLow=4024302358
 FileTimeHigh=31213625
-Status=Compiled
+Status=Modified
 [COMPILESTATUS|.\src\nand3.vhd]
 FileTimeLow=507095528
 FileTimeHigh=31211216
@@ -21,7 +21,7 @@ Status=Compiled
 [COMPILESTATUS|.\src\nor2.vhd]
 FileTimeLow=4024312358
 FileTimeHigh=31213625
-Status=Compiled
+Status=Modified
 [COMPILESTATUS|.\src\nor3.vhd]
 FileTimeLow=709573306
 FileTimeHigh=31211216
@@ -29,11 +29,11 @@ Status=Compiled
 [COMPILESTATUS|.\src\not1.vhd]
 FileTimeLow=4024312358
 FileTimeHigh=31213625
-Status=Compiled
+Status=Modified
 [COMPILESTATUS|.\src\or2.vhd]
 FileTimeLow=4024322359
 FileTimeHigh=31213625
-Status=Compiled
+Status=Modified
 [COMPILESTATUS|.\src\or3.vhd]
 FileTimeLow=858456158
 FileTimeHigh=31211216
@@ -41,7 +41,7 @@ Status=Compiled
 [COMPILESTATUS|.\src\xor2.vhd]
 FileTimeLow=4024337383
 FileTimeHigh=31213625
-Status=Compiled
+Status=Modified
 [COMPILESTATUS|.\src\xor3.vhd]
 FileTimeLow=958239081
 FileTimeHigh=31211216
@@ -49,7 +49,7 @@ Status=Compiled
 [COMPILESTATUS|.\src\xnor2.vhd]
 FileTimeLow=4024322359
 FileTimeHigh=31213625
-Status=Compiled
+Status=Modified
 [COMPILESTATUS|.\src\xnor3.vhd]
 FileTimeLow=1054381596
 FileTimeHigh=31211216
@@ -293,7 +293,7 @@ Status=Modified
 [COMPILESTATUS|.\src\gates_tb.vhd]
 FileTimeLow=4024302358
 FileTimeHigh=31213625
-Status=Compiled
+Status=Modified
 [CACHEDOC|Aldec.Hde.HdePlugIn.7|.\gates\src\gates_tb.vhd|]
 CurrentLine=11
 CurrentColumn=44

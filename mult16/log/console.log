@@ -1,9 +1,503 @@
-acom -reorder -O3 -e 100 -work mult16 -2002  $dsn/src/mult16.vhd
-# Compile Entity "mult16"
-# Compile Architecture "behavioral" of Entity "mult16"
-# Top-level unit(s) detected:
-# Entity => mult16
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
-# Design: Design "alu16" has been set as active.
+acom -reorder -dbg -e 100 -work mult16 -2008  $dsn/src/mult16.vhd $dsn/src/mult16_TB.vhd
+# Compile Entity "mult16"
+# Compile Architecture "behavioral" of Entity "mult16"
+# Compile Architecture "structural" of Entity "mult16_structural"
+# Compile Entity "mult16_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "mult16_tb"
+# Compile Configuration "TESTBENCH_FOR_mult16"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Compile Architecture "structural" of Entity "mult16_structural"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "mult16_tb"
+# Compile Configuration "TESTBENCH_FOR_mult16"
+# Compile Architecture "structural" of Entity "mult16_structural"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "mult16_tb"
+# Compile Configuration "TESTBENCH_FOR_mult16"
+# Compile Architecture "structural" of Entity "mult16_structural"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "mult16_tb"
+# Compile Configuration "TESTBENCH_FOR_mult16"
+# Error: COMP96_0056: mult16.vhd : (39, 1): Cannot find referenced entity declaration "mult16_structural".
+# Error: COMP96_0078: mult16_TB.vhd : (43, 25): Unknown identifier "s_a_in".
+# Error: COMP96_0078: mult16_TB.vhd : (44, 25): Unknown identifier "s_b_in".
+# Error: COMP96_0078: mult16_TB.vhd : (45, 25): Unknown identifier "s_r_out".
+# Error: COMP96_0078: mult16_TB.vhd : (46, 25): Unknown identifier "s_overflow".
+# Error: COMP96_0078: mult16_TB.vhd : (55, 9): Unknown identifier "s_a_in".
+# Error: COMP96_0133: mult16_TB.vhd : (55, 9): Cannot find object declaration.
+# Error: COMP96_0078: mult16_TB.vhd : (56, 9): Unknown identifier "s_b_in".
+# Error: COMP96_0133: mult16_TB.vhd : (56, 9): Cannot find object declaration.
+# Error: COMP96_0078: mult16_TB.vhd : (61, 9): Unknown identifier "s_a_in".
+# Error: COMP96_0133: mult16_TB.vhd : (61, 9): Cannot find object declaration.
+# Error: COMP96_0078: mult16_TB.vhd : (64, 9): Unknown identifier "s_b_in".
+# Error: COMP96_0133: mult16_TB.vhd : (64, 9): Cannot find object declaration.
+# Error: COMP96_0078: mult16_TB.vhd : (71, 17): Unknown identifier "s_r_out".
+# Error: COMP96_0133: mult16_TB.vhd : (71, 17): Cannot find object declaration.
+# Error: COMP96_0077: mult16_TB.vhd : (71, 16): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: mult16_TB.vhd : (73, 17): Unknown identifier "s_overflow".
+# Error: COMP96_0133: mult16_TB.vhd : (73, 17): Cannot find object declaration.
+# Error: COMP96_0077: mult16_TB.vhd : (73, 16): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0209: mult16_TB.vhd : (83, 6): Unknown architecture name used in configuration declaration.
+# Compile failure 20 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -reorder -dbg -e 100 -work mult16 -2008  $dsn/src/mult16.vhd $dsn/src/mult16_TB.vhd
+# Compile Entity "mult16_tb"
+# Compile Architecture "test" of Entity "mult16_tb"
+# Compile Entity "mult16_tb"
+# Warning: COMP96_0994: mult16_TB.vhd : (7, 1): Multiple entity "mult16_tb" found in "C:/Users/ulate/Desktop/new/midterm_project/mult16/src/mult16_TB.vhd", "C:/Users/ulate/Desktop/new/midterm_project/mult16/src/mult16.vhd".
+# Compile Architecture "TB_ARCHITECTURE" of Entity "mult16_tb"
+# Compile Configuration "TESTBENCH_FOR_mult16"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => mult16_tb
+# Configuration => TESTBENCH_FOR_mult16
+# Compile Architecture "TB_ARCHITECTURE" of Entity "mult16_tb"
+# Error: COMP96_0078: mult16_TB.vhd : (43, 25): Unknown identifier "s_a_in".
+# Error: COMP96_0078: mult16_TB.vhd : (44, 25): Unknown identifier "s_b_in".
+# Error: COMP96_0078: mult16_TB.vhd : (45, 25): Unknown identifier "s_r_out".
+# Error: COMP96_0078: mult16_TB.vhd : (46, 25): Unknown identifier "s_overflow".
+# Error: COMP96_0078: mult16_TB.vhd : (55, 9): Unknown identifier "s_a_in".
+# Error: COMP96_0133: mult16_TB.vhd : (55, 9): Cannot find object declaration.
+# Error: COMP96_0078: mult16_TB.vhd : (56, 9): Unknown identifier "s_b_in".
+# Error: COMP96_0133: mult16_TB.vhd : (56, 9): Cannot find object declaration.
+# Error: COMP96_0078: mult16_TB.vhd : (61, 9): Unknown identifier "s_a_in".
+# Error: COMP96_0133: mult16_TB.vhd : (61, 9): Cannot find object declaration.
+# Error: COMP96_0078: mult16_TB.vhd : (64, 9): Unknown identifier "s_b_in".
+# Error: COMP96_0133: mult16_TB.vhd : (64, 9): Cannot find object declaration.
+# Error: COMP96_0078: mult16_TB.vhd : (71, 17): Unknown identifier "s_r_out".
+# Error: COMP96_0133: mult16_TB.vhd : (71, 17): Cannot find object declaration.
+# Error: COMP96_0077: mult16_TB.vhd : (71, 16): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: mult16_TB.vhd : (73, 17): Unknown identifier "s_overflow".
+# Error: COMP96_0133: mult16_TB.vhd : (73, 17): Cannot find object declaration.
+# Error: COMP96_0077: mult16_TB.vhd : (73, 16): Undefined type of expression. Expected type 'BOOLEAN'.
+# Compile Configuration "TESTBENCH_FOR_mult16"
+# Error: COMP96_0209: mult16_TB.vhd : (83, 6): Unknown architecture name used in configuration declaration.
+# Compile failure 19 Errors 1 Warnings  Analysis time :  47.0 [ms]
+acom -reorder -dbg -e 100 -work mult16 -2008  $dsn/src/mult16.vhd $dsn/src/mult16_TB.vhd
+# Compile Entity "mult16_tb"
+# Compile Architecture "test" of Entity "mult16_tb"
+# Compile Entity "mult16_tb"
+# Warning: COMP96_0994: mult16_TB.vhd : (7, 1): Multiple entity "mult16_tb" found in "C:/Users/ulate/Desktop/new/midterm_project/mult16/src/mult16_TB.vhd", "C:/Users/ulate/Desktop/new/midterm_project/mult16/src/mult16.vhd".
+# Compile Architecture "TB_ARCHITECTURE" of Entity "mult16_tb"
+# Compile Configuration "TESTBENCH_FOR_mult16"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => mult16_tb
+# Configuration => TESTBENCH_FOR_mult16
+# Compile Architecture "TB_ARCHITECTURE" of Entity "mult16_tb"
+# Error: COMP96_0078: mult16_TB.vhd : (34, 25): Unknown identifier "s_a_in".
+# Error: COMP96_0078: mult16_TB.vhd : (35, 25): Unknown identifier "s_b_in".
+# Error: COMP96_0078: mult16_TB.vhd : (36, 25): Unknown identifier "s_r_out".
+# Error: COMP96_0078: mult16_TB.vhd : (37, 25): Unknown identifier "s_overflow".
+# Error: COMP96_0078: mult16_TB.vhd : (46, 9): Unknown identifier "s_a_in".
+# Error: COMP96_0133: mult16_TB.vhd : (46, 9): Cannot find object declaration.
+# Error: COMP96_0078: mult16_TB.vhd : (47, 9): Unknown identifier "s_b_in".
+# Error: COMP96_0133: mult16_TB.vhd : (47, 9): Cannot find object declaration.
+# Error: COMP96_0078: mult16_TB.vhd : (52, 9): Unknown identifier "s_a_in".
+# Error: COMP96_0133: mult16_TB.vhd : (52, 9): Cannot find object declaration.
+# Error: COMP96_0078: mult16_TB.vhd : (55, 9): Unknown identifier "s_b_in".
+# Error: COMP96_0133: mult16_TB.vhd : (55, 9): Cannot find object declaration.
+# Error: COMP96_0078: mult16_TB.vhd : (62, 17): Unknown identifier "s_r_out".
+# Error: COMP96_0133: mult16_TB.vhd : (62, 17): Cannot find object declaration.
+# Error: COMP96_0077: mult16_TB.vhd : (62, 16): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: mult16_TB.vhd : (64, 17): Unknown identifier "s_overflow".
+# Error: COMP96_0133: mult16_TB.vhd : (64, 17): Cannot find object declaration.
+# Error: COMP96_0077: mult16_TB.vhd : (64, 16): Undefined type of expression. Expected type 'BOOLEAN'.
+# Compile Configuration "TESTBENCH_FOR_mult16"
+# Error: COMP96_0209: mult16_TB.vhd : (74, 6): Unknown architecture name used in configuration declaration.
+# Compile failure 19 Errors 1 Warnings  Analysis time :  15.0 [ms]
+acom -reorder -dbg -e 100 -work mult16 -2008  $dsn/src/mult16.vhd $dsn/src/mult16_TB.vhd
+# Compile Entity "mult16"
+# Compile Architecture "behavioral" of Entity "mult16"
+# Compile Architecture "structural" of Entity "mult16_structural"
+# Compile Entity "mult16_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "mult16_tb"
+# Compile Configuration "TESTBENCH_FOR_mult16"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Compile Architecture "structural" of Entity "mult16_structural"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "mult16_tb"
+# Compile Configuration "TESTBENCH_FOR_mult16"
+# Compile Architecture "structural" of Entity "mult16_structural"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "mult16_tb"
+# Compile Configuration "TESTBENCH_FOR_mult16"
+# Compile Architecture "structural" of Entity "mult16_structural"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "mult16_tb"
+# Compile Configuration "TESTBENCH_FOR_mult16"
+# Error: COMP96_0056: mult16.vhd : (39, 1): Cannot find referenced entity declaration "mult16_structural".
+# Error: COMP96_0078: mult16_TB.vhd : (34, 25): Unknown identifier "s_a_in".
+# Error: COMP96_0078: mult16_TB.vhd : (35, 25): Unknown identifier "s_b_in".
+# Error: COMP96_0078: mult16_TB.vhd : (36, 25): Unknown identifier "s_r_out".
+# Error: COMP96_0078: mult16_TB.vhd : (37, 25): Unknown identifier "s_overflow".
+# Error: COMP96_0078: mult16_TB.vhd : (46, 9): Unknown identifier "s_a_in".
+# Error: COMP96_0133: mult16_TB.vhd : (46, 9): Cannot find object declaration.
+# Error: COMP96_0078: mult16_TB.vhd : (47, 9): Unknown identifier "s_b_in".
+# Error: COMP96_0133: mult16_TB.vhd : (47, 9): Cannot find object declaration.
+# Error: COMP96_0078: mult16_TB.vhd : (52, 9): Unknown identifier "s_a_in".
+# Error: COMP96_0133: mult16_TB.vhd : (52, 9): Cannot find object declaration.
+# Error: COMP96_0078: mult16_TB.vhd : (55, 9): Unknown identifier "s_b_in".
+# Error: COMP96_0133: mult16_TB.vhd : (55, 9): Cannot find object declaration.
+# Error: COMP96_0078: mult16_TB.vhd : (62, 17): Unknown identifier "s_r_out".
+# Error: COMP96_0133: mult16_TB.vhd : (62, 17): Cannot find object declaration.
+# Error: COMP96_0077: mult16_TB.vhd : (62, 16): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: mult16_TB.vhd : (64, 17): Unknown identifier "s_overflow".
+# Error: COMP96_0133: mult16_TB.vhd : (64, 17): Cannot find object declaration.
+# Error: COMP96_0077: mult16_TB.vhd : (64, 16): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0209: mult16_TB.vhd : (74, 6): Unknown architecture name used in configuration declaration.
+# Compile failure 20 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -reorder -dbg -e 100 -work mult16 -2008  $dsn/src/mult16.vhd $dsn/src/mult16_TB.vhd
+# Compile Entity "mult16"
+# Compile Architecture "behavioral" of Entity "mult16"
+# Compile Architecture "structural" of Entity "mult16_structural"
+# Compile Entity "mult16_tb"
+# Compile Architecture "test" of Entity "mult16_tb"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Compile Architecture "structural" of Entity "mult16_structural"
+# Compile Architecture "structural" of Entity "mult16_structural"
+# Compile Architecture "structural" of Entity "mult16_structural"
+# Error: COMP96_0056: mult16.vhd : (39, 1): Cannot find referenced entity declaration "mult16_structural".
+# Compile failure 1 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -reorder -dbg -e 100 -work mult16 -2008  $dsn/src/mult16.vhd $dsn/src/mult16_TB.vhd
+# Compile Entity "mult16"
+# Compile Architecture "behavioral" of Entity "mult16"
+# Compile Architecture "structural" of Entity "mult16"
+# Compile Entity "mult16_tb"
+# Compile Architecture "test" of Entity "mult16_tb"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => mult16_tb
+# Compile Architecture "structural" of Entity "mult16"
+# Error: COMP96_0078: mult16.vhd : (76, 29): Unknown identifier "gates".
+# Error: COMP96_0133: mult16.vhd : (76, 29): Cannot find object declaration.
+# Error: COMP96_0056: mult16.vhd : (76, 29): Cannot find referenced entity declaration "and2".
+# Error: COMP96_0055: mult16.vhd : (76, 29): Cannot find context item "gates.and2".
+# Error: COMP96_0078: mult16.vhd : (88, 28): Unknown identifier "full_adder".
+# Error: COMP96_0133: mult16.vhd : (88, 28): Cannot find object declaration.
+# Error: COMP96_0056: mult16.vhd : (88, 28): Cannot find referenced entity declaration "fullAdder".
+# Error: COMP96_0055: mult16.vhd : (88, 28): Cannot find context item "full_adder.fullAdder".
+# Error: COMP96_0078: mult16.vhd : (99, 32): Unknown identifier "full_adder".
+# Error: COMP96_0133: mult16.vhd : (99, 32): Cannot find object declaration.
+# Error: COMP96_0056: mult16.vhd : (99, 32): Cannot find referenced entity declaration "fullAdder".
+# Error: COMP96_0055: mult16.vhd : (99, 32): Cannot find context item "full_adder.fullAdder".
+# Error: COMP96_0078: mult16.vhd : (109, 32): Unknown identifier "full_adder".
+# Error: COMP96_0133: mult16.vhd : (109, 32): Cannot find object declaration.
+# Error: COMP96_0056: mult16.vhd : (109, 32): Cannot find referenced entity declaration "fullAdder".
+# Error: COMP96_0055: mult16.vhd : (109, 32): Cannot find context item "full_adder.fullAdder".
+# Error: COMP96_0078: mult16.vhd : (131, 29): Unknown identifier "full_adder".
+# Error: COMP96_0133: mult16.vhd : (131, 29): Cannot find object declaration.
+# Error: COMP96_0056: mult16.vhd : (131, 29): Cannot find referenced entity declaration "fullAdder".
+# Error: COMP96_0055: mult16.vhd : (131, 29): Cannot find context item "full_adder.fullAdder".
+# Error: COMP96_0078: mult16.vhd : (141, 27): Unknown identifier "full_adder".
+# Error: COMP96_0133: mult16.vhd : (141, 27): Cannot find object declaration.
+# Error: COMP96_0056: mult16.vhd : (141, 27): Cannot find referenced entity declaration "fullAdder".
+# Error: COMP96_0055: mult16.vhd : (141, 27): Cannot find context item "full_adder.fullAdder".
+# Error: COMP96_0259: mult16.vhd : (151, 11): Index value in the reference to the array object is out of the array type range.
+# Compile failure 25 Errors 0 Warnings  Analysis time :  32.0 [ms]
+# Design: Error: Failed to copy file full_adder.vhd
+acom -reorder -dbg -e 100 -work mult16 -2008  $dsn/src/mult16.vhd $dsn/src/mult16_TB.vhd
+# Compile Entity "mult16"
+# Compile Architecture "behavioral" of Entity "mult16"
+# Compile Architecture "structural" of Entity "mult16"
+# Compile Entity "mult16_tb"
+# Compile Architecture "test" of Entity "mult16_tb"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => mult16_tb
+# Compile Architecture "structural" of Entity "mult16"
+# Error: COMP96_0078: mult16.vhd : (76, 29): Unknown identifier "gates".
+# Error: COMP96_0133: mult16.vhd : (76, 29): Cannot find object declaration.
+# Error: COMP96_0056: mult16.vhd : (76, 29): Cannot find referenced entity declaration "and2".
+# Error: COMP96_0055: mult16.vhd : (76, 29): Cannot find context item "gates.and2".
+# Error: COMP96_0078: mult16.vhd : (88, 28): Unknown identifier "full_adder".
+# Error: COMP96_0133: mult16.vhd : (88, 28): Cannot find object declaration.
+# Error: COMP96_0056: mult16.vhd : (88, 28): Cannot find referenced entity declaration "fullAdder".
+# Error: COMP96_0055: mult16.vhd : (88, 28): Cannot find context item "full_adder.fullAdder".
+# Error: COMP96_0078: mult16.vhd : (99, 32): Unknown identifier "full_adder".
+# Error: COMP96_0133: mult16.vhd : (99, 32): Cannot find object declaration.
+# Error: COMP96_0056: mult16.vhd : (99, 32): Cannot find referenced entity declaration "fullAdder".
+# Error: COMP96_0055: mult16.vhd : (99, 32): Cannot find context item "full_adder.fullAdder".
+# Error: COMP96_0078: mult16.vhd : (109, 32): Unknown identifier "full_adder".
+# Error: COMP96_0133: mult16.vhd : (109, 32): Cannot find object declaration.
+# Error: COMP96_0056: mult16.vhd : (109, 32): Cannot find referenced entity declaration "fullAdder".
+# Error: COMP96_0055: mult16.vhd : (109, 32): Cannot find context item "full_adder.fullAdder".
+# Error: COMP96_0078: mult16.vhd : (131, 29): Unknown identifier "full_adder".
+# Error: COMP96_0133: mult16.vhd : (131, 29): Cannot find object declaration.
+# Error: COMP96_0056: mult16.vhd : (131, 29): Cannot find referenced entity declaration "fullAdder".
+# Error: COMP96_0055: mult16.vhd : (131, 29): Cannot find context item "full_adder.fullAdder".
+# Error: COMP96_0078: mult16.vhd : (141, 27): Unknown identifier "full_adder".
+# Error: COMP96_0133: mult16.vhd : (141, 27): Cannot find object declaration.
+# Error: COMP96_0056: mult16.vhd : (141, 27): Cannot find referenced entity declaration "fullAdder".
+# Error: COMP96_0055: mult16.vhd : (141, 27): Cannot find context item "full_adder.fullAdder".
+# Error: COMP96_0259: mult16.vhd : (151, 11): Index value in the reference to the array object is out of the array type range.
+# Compile failure 25 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work mult16 -2008  $dsn/src/mult16.vhd $dsn/src/mult16_TB.vhd
+# Compile Entity "mult16"
+# Compile Architecture "behavioral" of Entity "mult16"
+# Compile Architecture "structural" of Entity "mult16"
+# Error: COMP96_0078: mult16.vhd : (76, 29): Unknown identifier "gates".
+# Error: COMP96_0133: mult16.vhd : (76, 29): Cannot find object declaration.
+# Error: COMP96_0056: mult16.vhd : (76, 29): Cannot find referenced entity declaration "and2".
+# Error: COMP96_0055: mult16.vhd : (76, 29): Cannot find context item "gates.and2".
+# Error: COMP96_0078: mult16.vhd : (88, 28): Unknown identifier "full_adder".
+# Error: COMP96_0133: mult16.vhd : (88, 28): Cannot find object declaration.
+# Error: COMP96_0056: mult16.vhd : (88, 28): Cannot find referenced entity declaration "fullAdder".
+# Error: COMP96_0055: mult16.vhd : (88, 28): Cannot find context item "full_adder.fullAdder".
+# Error: COMP96_0078: mult16.vhd : (99, 32): Unknown identifier "full_adder".
+# Error: COMP96_0133: mult16.vhd : (99, 32): Cannot find object declaration.
+# Error: COMP96_0056: mult16.vhd : (99, 32): Cannot find referenced entity declaration "fullAdder".
+# Error: COMP96_0055: mult16.vhd : (99, 32): Cannot find context item "full_adder.fullAdder".
+# Error: COMP96_0078: mult16.vhd : (109, 32): Unknown identifier "full_adder".
+# Error: COMP96_0133: mult16.vhd : (109, 32): Cannot find object declaration.
+# Error: COMP96_0056: mult16.vhd : (109, 32): Cannot find referenced entity declaration "fullAdder".
+# Error: COMP96_0055: mult16.vhd : (109, 32): Cannot find context item "full_adder.fullAdder".
+# Error: COMP96_0078: mult16.vhd : (131, 29): Unknown identifier "full_adder".
+# Error: COMP96_0133: mult16.vhd : (131, 29): Cannot find object declaration.
+# Error: COMP96_0056: mult16.vhd : (131, 29): Cannot find referenced entity declaration "fullAdder".
+# Error: COMP96_0055: mult16.vhd : (131, 29): Cannot find context item "full_adder.fullAdder".
+# Error: COMP96_0078: mult16.vhd : (141, 27): Unknown identifier "full_adder".
+# Error: COMP96_0133: mult16.vhd : (141, 27): Cannot find object declaration.
+# Error: COMP96_0056: mult16.vhd : (141, 27): Cannot find referenced entity declaration "fullAdder".
+# Error: COMP96_0055: mult16.vhd : (141, 27): Cannot find context item "full_adder.fullAdder".
+# Error: COMP96_0259: mult16.vhd : (151, 11): Index value in the reference to the array object is out of the array type range.
+# Compile Entity "mult16_tb"
+# Compile Architecture "test" of Entity "mult16_tb"
+# Compile failure 25 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -reorder -dbg -e 100 -work mult16 -2008  $dsn/src/mult16.vhd $dsn/src/mult16_TB.vhd
+# Compile Entity "mult16"
+# Compile Architecture "behavioral" of Entity "mult16"
+# Compile Architecture "structural" of Entity "mult16"
+# Compile Entity "mult16_tb"
+# Compile Architecture "test" of Entity "mult16_tb"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => mult16_tb
+# Compile Architecture "structural" of Entity "mult16"
+# Error: COMP96_0078: mult16.vhd : (91, 28): Unknown identifier "full_adder".
+# Error: COMP96_0133: mult16.vhd : (91, 28): Cannot find object declaration.
+# Error: COMP96_0056: mult16.vhd : (91, 28): Cannot find referenced entity declaration "fullAdder".
+# Error: COMP96_0055: mult16.vhd : (91, 28): Cannot find context item "full_adder.fullAdder".
+# Error: COMP96_0078: mult16.vhd : (102, 32): Unknown identifier "full_adder".
+# Error: COMP96_0133: mult16.vhd : (102, 32): Cannot find object declaration.
+# Error: COMP96_0056: mult16.vhd : (102, 32): Cannot find referenced entity declaration "fullAdder".
+# Error: COMP96_0055: mult16.vhd : (102, 32): Cannot find context item "full_adder.fullAdder".
+# Error: COMP96_0078: mult16.vhd : (112, 32): Unknown identifier "full_adder".
+# Error: COMP96_0133: mult16.vhd : (112, 32): Cannot find object declaration.
+# Error: COMP96_0056: mult16.vhd : (112, 32): Cannot find referenced entity declaration "fullAdder".
+# Error: COMP96_0055: mult16.vhd : (112, 32): Cannot find context item "full_adder.fullAdder".
+# Error: COMP96_0078: mult16.vhd : (134, 29): Unknown identifier "full_adder".
+# Error: COMP96_0133: mult16.vhd : (134, 29): Cannot find object declaration.
+# Error: COMP96_0056: mult16.vhd : (134, 29): Cannot find referenced entity declaration "fullAdder".
+# Error: COMP96_0055: mult16.vhd : (134, 29): Cannot find context item "full_adder.fullAdder".
+# Error: COMP96_0078: mult16.vhd : (144, 27): Unknown identifier "full_adder".
+# Error: COMP96_0133: mult16.vhd : (144, 27): Cannot find object declaration.
+# Error: COMP96_0056: mult16.vhd : (144, 27): Cannot find referenced entity declaration "fullAdder".
+# Error: COMP96_0055: mult16.vhd : (144, 27): Cannot find context item "full_adder.fullAdder".
+# Error: COMP96_0259: mult16.vhd : (154, 11): Index value in the reference to the array object is out of the array type range.
+# Compile failure 21 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -reorder -dbg -e 100 -work mult16 -2008  $dsn/src/mult16.vhd $dsn/src/mult16_TB.vhd
+# Compile Entity "mult16"
+# Compile Architecture "behavioral" of Entity "mult16"
+# Compile Architecture "structural" of Entity "mult16"
+# Compile Entity "mult16_tb"
+# Compile Architecture "test" of Entity "mult16_tb"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => mult16_tb
+# Compile Architecture "structural" of Entity "mult16"
+# Error: COMP96_0259: mult16.vhd : (151, 28): Index value in the reference to the array object is out of the array type range.
+# Error: COMP96_0259: mult16.vhd : (156, 11): Index value in the reference to the array object is out of the array type range.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -reorder -dbg -e 100 -work mult16 -2008  $dsn/src/mult16.vhd $dsn/src/mult16_TB.vhd
+# Compile Entity "mult16"
+# Compile Architecture "behavioral" of Entity "mult16"
+# Compile Entity "mult16_tb"
+# Compile Architecture "test" of Entity "mult16_tb"
+# Top-level unit(s) detected:
+# Entity => mult16_tb
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -reorder -dbg -e 100 -work mult16 -2008  $dsn/src/mult16.vhd $dsn/src/mult16_TB.vhd
+# Compile Entity "mult16"
+# Compile Architecture "behavioral" of Entity "mult16"
+# Compile Entity "mult16_tb"
+# Compile Architecture "test" of Entity "mult16_tb"
+# Top-level unit(s) detected:
+# Entity => mult16_tb
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim -O5 -L altera -L altera_lnsim -L altera_lnsim_ver -L altera_mf -L altera_mf_ver -L altera_ver -L cyclonev +access +r +m+mult16 mult16 behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6591 kB (elbread=427 elab2=6024 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\ulate\Desktop\new\midterm_project\mult16\src\wave.asdb
+#  4:24 PM, Friday, October 31, 2025
+#  Simulation has been initialized
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/ulate/Desktop/new/midterm_project/mult16/src/wave.asdb'.
+# wave -rec *
+run
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /mult16,  Process: line__39.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /mult16,  Process: line__39.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /mult16,  Process: line__39.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /mult16,  Process: line__39.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 -L altera -L altera_lnsim -L altera_lnsim_ver -L altera_mf -L altera_mf_ver -L altera_ver -L cyclonev +access +r +m+mult16 mult16 behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6591 kB (elbread=427 elab2=6024 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\ulate\Desktop\new\midterm_project\mult16\src\wave.asdb
+#  4:25 PM, Friday, October 31, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/ulate/Desktop/new/midterm_project/mult16/src/wave.asdb'.
+run
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /mult16,  Process: line__39.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /mult16,  Process: line__39.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /mult16,  Process: line__39.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /mult16,  Process: line__39.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 -L altera -L altera_lnsim -L altera_lnsim_ver -L altera_mf -L altera_mf_ver -L altera_ver -L cyclonev +access +r +m+mult16 mult16 behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6591 kB (elbread=427 elab2=6024 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\ulate\Desktop\new\midterm_project\mult16\src\wave.asdb
+#  4:25 PM, Friday, October 31, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/ulate/Desktop/new/midterm_project/mult16/src/wave.asdb'.
+# VSIM: 7 object(s) traced.
+# wave -rec *
+run
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /mult16,  Process: line__39.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /mult16,  Process: line__39.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /mult16,  Process: line__39.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /mult16,  Process: line__39.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -reorder -dbg -e 100 -work mult16 -2008  $dsn/src/mult16.vhd $dsn/src/mult16_TB.vhd
+# Compile Entity "mult16"
+# Compile Architecture "behavioral" of Entity "mult16"
+# Compile Entity "mult16_tb"
+# Compile Architecture "test" of Entity "mult16_tb"
+# Top-level unit(s) detected:
+# Entity => mult16_tb
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim -O5 -L altera -L altera_lnsim -L altera_lnsim_ver -L altera_mf -L altera_mf_ver -L altera_ver -L cyclonev +access +r +m+mult16_tb mult16_tb test
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6594 kB (elbread=427 elab2=6027 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\ulate\Desktop\new\midterm_project\mult16\src\wave.asdb
+#  4:25 PM, Friday, October 31, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/ulate/Desktop/new/midterm_project/mult16/src/wave.asdb'.
+# VSIM: 11 object(s) traced.
+# wave -rec *
+run
+# EXECUTION:: NOTE   : Starting testbench for 128 * 128...
+# EXECUTION:: Time: 0 ps,  Iteration: 0,  Instance: /mult16_tb,  Process: stim_proc.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /mult16_tb/uut_mult16,  Process: line__39.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /mult16_tb/uut_mult16,  Process: line__39.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /mult16_tb/uut_mult16,  Process: line__39.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /mult16_tb/uut_mult16,  Process: line__39.
+# EXECUTION:: NOTE   : Testbench finished. Check waveform for 128 * 128 = 16384 (x"4000")
+# EXECUTION:: Time: 600 ns,  Iteration: 0,  Instance: /mult16_tb,  Process: stim_proc.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# Waveform file 'untitled.awc' connected to 'C:/Users/ulate/Desktop/new/midterm_project/full_adder/src/full_adder_tb_wf.asdb'.
+endsim
+# VSIM: Simulation has finished.
+# Design: Design "half_adder" has been set as active.
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: Architecture 'behavioral' of entity 'full_adder_tb' not found in library 'half_adder'.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed

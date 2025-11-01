@@ -1,42 +1,29 @@
-Active-HDL 15.0.260.9131 2025-10-29 16:29:23
+Active-HDL 15.0.260.9131 2025-10-31 16:45:21
 
 Elaboration top modules:
-Architecture                  behavioral(full_adder_tb)
+Architecture                  test(adder16_tb)
 
 
----------------------------------------------------------------------------------------------------
-Entity        | Architecture | Library    | Info | Compiler Version          | Compilation Options
----------------------------------------------------------------------------------------------------
-full_adder_tb | behavioral   | full_adder |      | 15.0.260.9131 (Windows64) | -O3
-fullAdder     | behavioral   | full_adder |      | 15.0.260.9131 (Windows64) | -O3
-fullAdder     | structural   | full_adder |      | 15.0.260.9131 (Windows64) | -O3
-halfAdder     | structural   | half_adder |      | 15.0.260.9131 (Windows64) | -O3
-xor2          | rtl          | gates      |      | 15.0.260.9131 (Windows64) | -O3
-and2          | rtl          | gates      |      | 15.0.260.9131 (Windows64) | -O3
-or2           | rtl          | gates      |      | 15.0.260.9131 (Windows64) | -O3
----------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+Entity     | Architecture | Library    | Info | Compiler Version          | Compilation Options
+------------------------------------------------------------------------------------------------
+adder16_tb | test         | full_adder |      | 15.0.260.9131 (Windows64) | -dbg -2008
+adder16    | structural   | full_adder |      | 15.0.260.9131 (Windows64) | -dbg -2008
+------------------------------------------------------------------------------------------------
 
----------------------------------------------------------------------------------------------------
-VHDL Package                 | Library    | Info | Compiler Version          | Compilation Options
----------------------------------------------------------------------------------------------------
-standard                     | std        |      |                           | <unavailable>
-TEXTIO                       | std        |      | 15.0.260.9131 (Windows64) |  -2019
-std_logic_1164               | ieee       |      | 15.0.260.9131 (Windows64) |  -2008
-NUMERIC_STD                  | ieee       |      | 15.0.260.9131 (Windows64) |  -2008
----------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+VHDL Package              | Library    | Info | Compiler Version          | Compilation Options
+------------------------------------------------------------------------------------------------
+standard                  | std        |      |                           | <unavailable>
+TEXTIO                    | std        |      | 15.0.260.9131 (Windows64) |  -2019
+std_logic_1164            | ieee       |      | 15.0.260.9131 (Windows64) |  -2008
+NUMERIC_STD               | ieee       |      | 15.0.260.9131 (Windows64) |  -2008
+------------------------------------------------------------------------------------------------
 
----------------------------------------------------------------------------------------------------
-Library                      | Comment
----------------------------------------------------------------------------------------------------
-full_adder                   | None
-gates                        | None
-half_adder                   | None
-ieee                         | Standard IEEE packages library
-std                          | Standard VHDL library
----------------------------------------------------------------------------------------------------
-
-
-Simulation Options: asim -O5 +access +r +m+full_adder_tb full_adder_tb behavioral
-
-
-The performance of simulation is reduced. Version EDU Edition
+------------------------------------------------------------------------------------------------
+Library                   | Comment
+------------------------------------------------------------------------------------------------
+full_adder                | None
+ieee                      | Standard IEEE packages library
+std                       | Standard VHDL library
+------------------------------------------------------------------------------------------------

@@ -4,7 +4,7 @@ VCS=0
 version=4
 Current Config=compile
 [Configurations]
-compile=adder16
+compile=full_adder
 [Library]
 adder16=.\adder16\adder16.lib
 full_adder=.\..\full_adder\full_adder\full_adder.lib
@@ -20,6 +20,7 @@ LANGUAGE=VHDL
 FLOWTOOLS=NONE
 REFRESH_FLOW=1
 FAMILY=
+fileopenfolder=C:\Users\ulate\Desktop\new\midterm_project\adder16\src
 [folders]
 name0=ALINT-PRO Workspaces
 directory0=c:\My_Designs\midterm_project\adder16\
@@ -60,6 +61,20 @@ extension11=asdb;awc;asdbc;asdbe
 [Files]
 /adder16.vhd=-1
 /adder16_tb.vhd=-1
+/wave.asdb=-1
+/adder16_tb2.vhd=-1
+/tb_wave.asdb=-1
+/tb_wave.awc=-1
+/..\..\half_adder\src\half_adder_tb_wf.awc=-1
 [Files.Data]
 .\src\adder16.vhd=VHDL Source Code
 .\src\adder16_tb.vhd=VHDL Source Code
+.\src\wave.asdb=Accelerated Waveform File
+.\src\adder16_tb2.vhd=VHDL Source Code
+.\src\tb_wave.asdb=Accelerated Waveform File
+.\src\tb_wave.awc=Accelerated Waveform Configuration
+.\..\half_adder\src\half_adder_tb_wf.awc=Accelerated Waveform Configuration
+[HierarchyViewer]
+HierarchyInformation=adder16_tb|test|0
+ShowHide=ShowTopLevel
+Selected=

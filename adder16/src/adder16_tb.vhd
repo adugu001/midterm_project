@@ -38,7 +38,8 @@ constant Test_Cases : TestCase_Array := (
     (A_in => X"AAAA", B_in => X"5555", C_in => '1', Sum => X"0000", Cout => '1'), -- 1010 + 0101 + 1 = 16-bit ripple to 0	  
     (A_in => X"F00F", B_in => X"0FF0", C_in => '1', Sum => X"0000", Cout => '1'), -- Carry generated at bit 4, ripples to bit 15, then C_out
     (A_in => X"1234", B_in => X"0000", C_in => '0', Sum => X"1234", Cout => '0'),  -- Identity Check (A + 0 + 0 = A)  
-    (A_in => X"5A5A", B_in => X"5A5A", C_in => '0', Sum => X"B4B4", Cout => '0')	 -- A=B Check (Simple Doubling)
+    (A_in => X"5A5A", B_in => X"5A5A", C_in => '0', Sum => X"B4B4", Cout => '0'),	 -- A=B Check (Simple Doubling)	
+	(A_in => X"03E8", B_in => X"07D0", C_in => '0', Sum => X"0BB8", Cout => '0')	 -- A=B Check (Simple Doubling)
 );
 
 --SIGNAL DECLARATIONS

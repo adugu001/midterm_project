@@ -7,12 +7,12 @@ CurrentVersion=103
 [CACHEDOC|Aldec.Project.Generic.7|.\half_adder\half_adder.adf|]
 Path=
 [COMPILESTATUS|.\src\half_adder.vhd]
-FileTimeLow=4024397447
-FileTimeHigh=31213625
+FileTimeLow=1492162684
+FileTimeHigh=31214023
 Status=Compiled
 [COMPILESTATUS|.\src\half_adder_tb.vhd]
-FileTimeLow=4024397447
-FileTimeHigh=31213625
+FileTimeLow=1492162684
+FileTimeHigh=31214023
 Status=Compiled
 [CACHEDOC|Aldec.Hde.HdePlugIn.7|.\full_adder\src/full_adder_tb.vhd|]
 CurrentLine=21

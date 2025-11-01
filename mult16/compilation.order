@@ -1,1 +1,2 @@
 .\src\mult16.vhd
+.\src\mult16_TB.vhd

@@ -1,11 +1,11 @@
 [General]
 CurrentVersion=103
 [CACHEDOC|Aldec.Project.Generic.7|.\alu16\alu16.adf|]
-Path=/alu16_tb
+Path=
 [COMPILESTATUS|.\src\alu16.vhd]
 FileTimeLow=673172730
 FileTimeHigh=31214206
-Status=Compiled
+Status=Modified
 [CACHESIMPLE|Aldec.SymbolsCommands.7]
 Built-in symbols=0
 half_adder=0
@@ -34,7 +34,7 @@ ZOOMOFSETS_PAGES=1,1,1,2,50,50,
 [COMPILESTATUS|.\src\alu16_tb.vhd]
 FileTimeLow=3865759076
 FileTimeHigh=31214206
-Status=Compiled
+Status=Modified
 [CACHEDOC|Aldec.Hde.HdePlugIn.7|.\mult16\src/mult16.vhd|]
 CurrentLine=38
 CurrentColumn=44

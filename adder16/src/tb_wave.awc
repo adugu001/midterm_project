@@ -6,12 +6,12 @@
     </comment>
     <databases>
         <database id="">*virtual*</database>
-        <database id="080027d10db45436f96883ef1d000200">half_adder_tb_wf.asdb</database>
+        <database id="44fa6665979d6545056996e3db130300">tb_wave.asdb</database>
     </databases>
     <gridshown/>
     <signallists>
         <signallist id="0">
-                AAAADwzADAAAABABAwEHARAAABARAAAA
+                AAAAFgAEwAAAAAAQETMBF3ETMQMAH+EDjwAAEBEAAAAA
 |
         </signallist>
     </signallists>
@@ -51,7 +51,7 @@
     </propertybases>
     <timebases>
         <timebase id="0">
-            <time start_time="0" end_time="85867" />
+            <time start_time="0" end_time="610691" />
         </timebase>
     </timebases>
     <prefbases>
@@ -64,7 +64,7 @@
     </bookmarkbases>
     <cursorbases>
         <cursors id="0">
-            <cursor value="61821" label="Cursor 1" locked="0" />
+            <cursor value="152551" label="Cursor 1" locked="0" />
         </cursors>
     </cursorbases>
     <measurementbases>
@@ -74,7 +74,7 @@
         </comments>
     </commentbases>
     <views>
-        <view signallist="0" propertybase="0" prefbase="-1" type="1" bookmarks="0" cursors="0" measurements="-1" comments="-1" />
+        <view signallist="0" propertybase="0" prefbase="0" type="1" bookmarks="0" cursors="0" measurements="-1" comments="-1" />
     </views>
     <virtualsources>
         <virtualnamedrows>

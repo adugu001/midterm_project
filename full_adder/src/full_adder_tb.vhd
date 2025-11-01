@@ -5,7 +5,7 @@ use IEEE.NUMERIC_STD.all;
 entity full_adder_tb is
 end entity full_adder_tb;
 
-architecture behavioral of full_adder_tb is
+architecture behavioral of fullAdder is
 
     signal a, b, cin    : std_logic; 
     signal cout_sig_beh : std_logic;

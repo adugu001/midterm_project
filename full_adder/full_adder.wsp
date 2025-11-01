@@ -12,11 +12,11 @@ mult16=0
 [COMPILESTATUS|.\src\full_adder.vhd]
 FileTimeLow=4024192356
 FileTimeHigh=31213625
-Status=Compiled
+Status=Modified
 [COMPILESTATUS|.\src\full_adder_tb.vhd]
 FileTimeLow=4024192356
 FileTimeHigh=31213625
-Status=Compiled
+Status=Modified
 [CACHEDOC|Aldec.Hde.HdePlugIn.7|.\half_adder\src/half_adder.vhd|]
 CurrentLine=12
 CurrentColumn=35

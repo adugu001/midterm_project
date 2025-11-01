@@ -5,11 +5,11 @@ Path=
 [COMPILESTATUS|.\src\subtractor16.vhd]
 FileTimeLow=4024670385
 FileTimeHigh=31213625
-Status=Compiled
+Status=Modified
 [COMPILESTATUS|.\src\subtractor16_tb.vhd]
 FileTimeLow=4024670385
 FileTimeHigh=31213625
-Status=Compiled
+Status=Modified
 [CACHEDOC|Aldec.Hde.HdePlugIn.7|.\subtractor16\src/subtractor16.vhd|]
 CurrentLine=26
 CurrentColumn=12

@@ -11,12 +11,24 @@ CurrentVersion=103
 [CACHEDOC|Aldec.Project.Generic.7|.\mult16\mult16.adf|]
 Path=
 [COMPILESTATUS|.\src\mult16.vhd]
-FileTimeLow=756216850
-FileTimeHigh=31213284
-Status=Modified
+FileTimeLow=1967287622
+FileTimeHigh=31214269
+Status=Compiled
 [COMPILESTATUS|.\src\mult16_tb.vhd]
-FileTimeLow=2008157117
-FileTimeHigh=31213236
+FileTimeLow=2586763443
+FileTimeHigh=31214268
+Status=Compiled
+[COMPILESTATUS|.\src\wave.asdb]
+FileTimeLow=1492247834
+FileTimeHigh=31214023
+Status=Modified
+[COMPILESTATUS|.\src\TestBench\mult16_TB.vhd]
+FileTimeLow=4181241466
+FileTimeHigh=31214267
+Status=Modified
+[COMPILESTATUS|.\src\TestBench\mult16_TB_runtest.do]
+FileTimeLow=4181261450
+FileTimeHigh=31214267
 Status=Modified
 [Gui config]
-RunFor=100 ns
+RunFor=500 ns
